@@ -1,0 +1,41 @@
+uuid: 86a8e703-8e81-4bd2-9fb8-2b2d70d96387
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.activity_stream
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - socialblue
+id: socialblue_views_block__activity_stream_block_stream_homepage
+theme: socialblue
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:activity_stream-block_stream_homepage'
+settings:
+  id: 'views_block:activity_stream-block_stream_homepage'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /stream
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,17 @@
+uuid: cffe33b7-7c3d-4979-ae95-c26de881d904
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open_group
+  enforced:
+    config:
+      - user.role.diasporan
+id: open_group-f0801ecd7
+label: Diasporan
+weight: -5
+internal: true
+audience: outsider
+group_type: open_group
+permissions_ui: false
+permissions: {  }

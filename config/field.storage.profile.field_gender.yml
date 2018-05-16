@@ -1,0 +1,20 @@
+uuid: 58b76614-5aa0-4ebc-9e51-0e235ff8de2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - dropdown
+    - profile
+id: profile.field_gender
+field_name: field_gender
+entity_type: profile
+type: dropdown
+settings:
+  allowed_values: {  }
+module: dropdown
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

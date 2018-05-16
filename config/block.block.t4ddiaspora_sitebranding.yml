@@ -1,0 +1,23 @@
+uuid: 7385d862-4561-4cfa-9b76-8635bd093e47
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - t4ddiaspora
+id: t4ddiaspora_sitebranding
+theme: t4ddiaspora
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

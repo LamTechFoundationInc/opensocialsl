@@ -1,0 +1,21 @@
+uuid: 0168a827-16ad-4101-8956-3ab658316c97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_age_range
+    - profile.type.profile
+  module:
+    - options
+id: profile.profile.field_age_range
+field_name: field_age_range
+entity_type: profile
+bundle: profile
+label: 'Age Range'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

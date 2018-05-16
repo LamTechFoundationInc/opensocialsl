@@ -1,0 +1,8 @@
+uuid: 93e5fde4-fe07-4102-b470-8ac27717f4c9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BeZSI8BN4wU7cbmn3B2YF8P3u4hb-4WCWsQS3--IjVU
+id: photo
+label: Photo

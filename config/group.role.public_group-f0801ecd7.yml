@@ -1,0 +1,17 @@
+uuid: 2830579a-aa5c-422a-b949-aebb8fba3930
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.public_group
+  enforced:
+    config:
+      - user.role.diasporan
+id: public_group-f0801ecd7
+label: Diasporan
+weight: -5
+internal: true
+audience: outsider
+group_type: public_group
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: 4ad6e193-e6bc-4c06-b079-162eea342127
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.diasporan
+  module:
+    - user
+id: user_remove_role_action.diasporan
+label: 'Remove the Diasporan role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: diasporan

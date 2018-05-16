@@ -1,0 +1,29 @@
+uuid: ca72504f-5b17-4ba5-87b0-33661132c266
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: B64FygOPdWuKKxAmCndkKdBwFAI_8J0GRs5XFZFravk
+name: 'Simple text'
+format: simple_text
+weight: 5
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72

@@ -1,0 +1,24 @@
+uuid: f55a6416-278f-4188-b0f5-019bbe394f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_place_of_origin
+    - profile.type.profile
+  module:
+    - address
+id: profile.profile.field_place_of_origin
+field_name: field_place_of_origin
+entity_type: profile
+bundle: profile
+label: 'Country of Origin'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: SL
+default_value_callback: ''
+settings:
+  available_countries: {  }
+field_type: address_country

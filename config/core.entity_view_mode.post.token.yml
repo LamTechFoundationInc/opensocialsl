@@ -1,0 +1,10 @@
+uuid: bd3f3ed5-9dd9-4eb1-8de4-91264a1a8f5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_post
+id: post.token
+label: Token
+targetEntityType: post
+cache: true

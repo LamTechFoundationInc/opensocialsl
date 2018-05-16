@@ -1,0 +1,25 @@
+uuid: 77370fcc-0b3d-446c-b68a-ef821bbf5a20
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:platform_intro:9572b4dd-b217-4c49-8cec-9fc876909d56'
+  module:
+    - block_content
+  theme:
+    - socialblue
+id: whoisthisfor
+theme: socialblue
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:9572b4dd-b217-4c49-8cec-9fc876909d56'
+settings:
+  id: 'block_content:9572b4dd-b217-4c49-8cec-9fc876909d56'
+  label: 'Who is this for?'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

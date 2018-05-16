@@ -1,0 +1,14 @@
+uuid: 58a94115-258a-439c-9104-f6e524e0b7e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.diasporan
+  module:
+    - user
+id: user_add_role_action.diasporan
+label: 'Add the Diasporan role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: diasporan

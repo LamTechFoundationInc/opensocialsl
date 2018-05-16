@@ -1,0 +1,15 @@
+uuid: d1064b38-ab1d-4bd1-85bb-2175b88aa49b
+name: 'Open Diaspora Investment Platform'
+mail: info@lamtech.sl
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /stream
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: tamba.s.lamin@lamtech.sl

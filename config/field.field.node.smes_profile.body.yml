@@ -1,0 +1,22 @@
+uuid: 30625b93-9451-4e02-9654-f55946336033
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.smes_profile
+  module:
+    - text
+id: node.smes_profile.body
+field_name: body
+entity_type: node
+bundle: smes_profile
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

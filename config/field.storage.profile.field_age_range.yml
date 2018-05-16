@@ -1,0 +1,51 @@
+uuid: cf2cb771-9047-44c8-b1d8-bf1fd80272a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_age_range
+field_name: field_age_range
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Under 18'
+      label: 'Under 18'
+    -
+      value: '18 - 21'
+      label: '18 - 21'
+    -
+      value: '22 - 26'
+      label: '22 - 26'
+    -
+      value: '27 - 31'
+      label: '27 - 31'
+    -
+      value: '32 - 36'
+      label: '32 - 36'
+    -
+      value: '37 - 41'
+      label: '37 - 41'
+    -
+      value: '42 - 46'
+      label: '42 - 46'
+    -
+      value: '47 - 51'
+      label: '47 - 51'
+    -
+      value: '52 - 59'
+      label: '52 - 59'
+    -
+      value: 'Above 60'
+      label: 'Above 60'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

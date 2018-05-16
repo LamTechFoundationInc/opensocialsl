@@ -1,0 +1,20 @@
+uuid: 3c65dbec-7833-49ee-978b-bae309542acf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - socialblue
+id: messages
+theme: socialblue
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

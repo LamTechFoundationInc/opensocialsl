@@ -1,0 +1,20 @@
+uuid: eefbe2a6-a711-4d88-91f8-4f3dec5b932a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - t4ddiaspora
+id: t4ddiaspora_messages
+theme: t4ddiaspora
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

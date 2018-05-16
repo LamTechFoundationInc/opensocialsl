@@ -1,0 +1,19 @@
+uuid: 63c76325-3511-42ac-aa6c-e358785510cb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NB-WRkiPnJMofk3ncSOZzU9fH3bKeypiMghNwymeVuw
+id: UserMention
+name: UserMention
+description: 'User mentions'
+mention_type: entity
+input:
+  prefix: '[~'
+  suffix: ']'
+  entity_type: user
+  inputvalue: name
+output:
+  outputvalue: '[user:name]'
+  renderlink: 1
+  renderlinktextbox: 'user/[user:uid]'

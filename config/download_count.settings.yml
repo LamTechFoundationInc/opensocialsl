@@ -1,0 +1,5 @@
+download_count_flood_limit: 1
+download_count_flood_window: 5
+download_count_excluded_file_extensions: 'jpg jpeg gif png'
+_core:
+  default_config_hash: OQbXjp1S_ZgD9lYCGj4yoqlnymgUvlWnPNwSNdpZ2i4

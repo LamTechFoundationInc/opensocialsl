@@ -1,0 +1,24 @@
+uuid: f56fe9e9-4289-4ef1-80f8-6912b9b4cc8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - t4ddiaspora
+id: t4ddiaspora_mainnavigation
+theme: t4ddiaspora
+region: header
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

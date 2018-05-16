@@ -1,0 +1,31 @@
+uuid: 82acbcb3-defa-4e3f-8a88-38accb9fa2dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.following
+  module:
+    - system
+    - views
+  theme:
+    - t4ddiaspora
+_core:
+  default_config_hash: E1e2ChYjW2belIX2h1-Y7iAKgGV_ExQNS-PXvmrq5bk
+id: t4ddiaspora_exposedformfollowingfollowing
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:following-following'
+settings:
+  id: 'views_exposed_filter_block:following-following'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: /following
+    negate: false
+    context_mapping: {  }

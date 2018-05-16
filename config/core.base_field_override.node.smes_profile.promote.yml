@@ -1,0 +1,22 @@
+uuid: 4b41965d-e529-4e64-9e6e-a5c0dd52ee93
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.smes_profile
+id: node.smes_profile.promote
+field_name: promote
+entity_type: node
+bundle: smes_profile
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

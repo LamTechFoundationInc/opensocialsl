@@ -1,0 +1,30 @@
+uuid: 6e6d8d59-62a9-45fb-a830-8a286260befa
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.activity_stream_group
+  module:
+    - system
+    - views
+  theme:
+    - t4ddiaspora
+id: t4ddiaspora_views_block__activity_stream_group_block_stream_group
+theme: t4ddiaspora
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:activity_stream_group-block_stream_group'
+settings:
+  id: 'views_block:activity_stream_group-block_stream_group'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/stream'
+    negate: false
+    context_mapping: {  }

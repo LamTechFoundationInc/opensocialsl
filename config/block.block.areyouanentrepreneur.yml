@@ -1,0 +1,39 @@
+uuid: 4eaabc7e-03bd-4b08-93ec-9f9b32199cdc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_call_to_action_block:e5904889-b858-46d7-b908-ec432e59a8b8'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - socialblue
+id: areyouanentrepreneur
+theme: socialblue
+region: hero
+weight: -5
+provider: null
+plugin: 'block_content:e5904889-b858-46d7-b908-ec432e59a8b8'
+settings:
+  id: 'block_content:e5904889-b858-46d7-b908-ec432e59a8b8'
+  label: 'Are you an Entrepreneur?'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

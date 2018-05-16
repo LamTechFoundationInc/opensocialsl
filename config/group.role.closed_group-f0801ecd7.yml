@@ -1,0 +1,17 @@
+uuid: e5008c2a-776a-4027-9164-d06a7b514009
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.closed_group
+  enforced:
+    config:
+      - user.role.diasporan
+id: closed_group-f0801ecd7
+label: Diasporan
+weight: -5
+internal: true
+audience: outsider
+group_type: closed_group
+permissions_ui: false
+permissions: {  }

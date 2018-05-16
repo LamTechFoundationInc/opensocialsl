@@ -1,0 +1,25 @@
+uuid: 6122df68-336c-4c6a-921f-0477195f2af3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:platform_intro:9572b4dd-b217-4c49-8cec-9fc876909d56'
+  module:
+    - block_content
+  theme:
+    - t4ddiaspora
+id: t4ddiaspora_whoisthisfor
+theme: t4ddiaspora
+region: content_bottom
+weight: 0
+provider: null
+plugin: 'block_content:9572b4dd-b217-4c49-8cec-9fc876909d56'
+settings:
+  id: 'block_content:9572b4dd-b217-4c49-8cec-9fc876909d56'
+  label: 'Who is this for?'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

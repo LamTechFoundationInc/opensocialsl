@@ -1,0 +1,21 @@
+uuid: 31680279-a09e-41c4-83eb-96abd951ed59
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - text
+_core:
+  default_config_hash: Pytz4MnaPg-k4HXKcKJqJ6b-5YcGYiEVexJflP6PQXQ
+id: profile.field_profile_self_introduction
+field_name: field_profile_self_introduction
+entity_type: profile
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

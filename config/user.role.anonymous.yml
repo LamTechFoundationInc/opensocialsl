@@ -1,0 +1,22 @@
+uuid: 4059dbf4-e86f-4ba7-8937-ea072bae012f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access content search'
+  - 'access group search'
+  - 'view download counts'
+  - 'view like widget'
+  - 'view node.book.field_content_visibility:public content'
+  - 'view node.event.field_content_visibility:public content'
+  - 'view node.page.field_content_visibility:public content'
+  - 'view node.topic.field_content_visibility:public content'
+  - 'view public posts'
+  - 'view published post entities'
