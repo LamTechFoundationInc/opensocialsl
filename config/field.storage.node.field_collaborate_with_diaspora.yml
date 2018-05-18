@@ -1,0 +1,30 @@
+uuid: a20c6a81-9ff2-4538-b1cb-585375d3da90
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_collaborate_with_diaspora
+field_name: field_collaborate_with_diaspora
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Low
+      label: Low
+    -
+      value: Medium
+      label: Medium
+    -
+      value: High
+      label: High
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

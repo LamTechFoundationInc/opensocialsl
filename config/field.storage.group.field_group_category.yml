@@ -1,0 +1,33 @@
+uuid: 2620530e-323b-4073-81c8-fa1a33e8809b
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - options
+id: group.field_group_category
+field_name: field_group_category
+entity_type: group
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Industry Group'
+      label: 'Industry Group'
+    -
+      value: 'SME Group'
+      label: 'SME Group'
+    -
+      value: 'Audience Group'
+      label: 'Audience Group'
+    -
+      value: 'Industry Chamber'
+      label: 'Industry Chamber'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

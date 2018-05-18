@@ -1,0 +1,11 @@
+uuid: 0a685092-5f08-4fed-83cf-047aae0fe722
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.beneficiaries
+id: taxonomy_term.beneficiaries
+target_entity_type_id: taxonomy_term
+target_bundle: beneficiaries
+default_langcode: site_default
+language_alterable: false

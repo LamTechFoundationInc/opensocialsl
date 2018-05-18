@@ -9,12 +9,12 @@ label: Profile
 registration: false
 multiple: false
 roles:
-  authenticated: '0'
-  diasporan: '0'
-  member: '0'
-  contentmanager: '0'
-  sitemanager: '0'
-  administrator: '0'
+  authenticated: authenticated
+  diasporan: diasporan
+  member: member
+  contentmanager: contentmanager
+  sitemanager: sitemanager
+  administrator: administrator
 weight: 0
 use_revisions: false
-description: 'The default Open Social profile type'
+description: 'The default member profile type'

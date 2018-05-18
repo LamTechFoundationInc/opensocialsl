@@ -1,0 +1,19 @@
+uuid: 2121b233-70ca-4104-8336-773f8bd474cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - mentions
+name: 'Advanced HTML'
+format: advanced_html
+weight: 0
+filters:
+  filter_mentions:
+    id: filter_mentions
+    provider: mentions
+    status: false
+    weight: -10
+    settings:
+      mentions_filter:
+        ProfileMention: '0'
+        UserMention: '0'

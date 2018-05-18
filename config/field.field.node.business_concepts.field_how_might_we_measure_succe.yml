@@ -1,0 +1,19 @@
+uuid: 83015080-03c2-4f42-b4a6-c3894b90aabe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_how_might_we_measure_succe
+    - node.type.business_concepts
+id: node.business_concepts.field_how_might_we_measure_succe
+field_name: field_how_might_we_measure_succe
+entity_type: node
+bundle: business_concepts
+label: 'How might we measure success'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

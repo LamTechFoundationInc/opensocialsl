@@ -1,0 +1,35 @@
+uuid: 0e75214c-d783-4e11-8903-b4725cef7ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_official_sme_address
+    - node.type.smes_profile
+  module:
+    - address
+id: node.smes_profile.field_official_sme_address
+field_name: field_official_sme_address
+entity_type: node
+bundle: smes_profile
+label: 'Official SME Address and Contact Person'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: organization
+    givenName: givenName
+    additionalName: additionalName
+    familyName: familyName
+  langcode_override: ''
+field_type: address

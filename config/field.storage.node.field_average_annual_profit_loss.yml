@@ -1,0 +1,20 @@
+uuid: 8b5205ab-78cd-44b3-81a7-683a94b932c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_average_annual_profit_loss
+field_name: field_average_annual_profit_loss
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

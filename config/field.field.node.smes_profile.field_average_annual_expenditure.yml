@@ -1,0 +1,23 @@
+uuid: 0061d721-b027-46eb-9c65-9b28deed2268
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_average_annual_expenditure
+    - node.type.smes_profile
+id: node.smes_profile.field_average_annual_expenditure
+field_name: field_average_annual_expenditure
+entity_type: node
+bundle: smes_profile
+label: 'What is Your Average Annual Expenditure'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

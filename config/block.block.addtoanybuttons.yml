@@ -1,0 +1,20 @@
+uuid: 398c4f4b-c17e-4b85-84fa-10772065af8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - t4ddiaspora
+id: addtoanybuttons
+theme: t4ddiaspora
+region: complementary_top
+weight: -9
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'Share this page'
+  provider: addtoany
+  label_display: visible
+visibility: {  }

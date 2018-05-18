@@ -11,7 +11,7 @@ id: node.smes_profile.body
 field_name: body
 entity_type: node
 bundle: smes_profile
-label: Body
+label: 'Description of your SME'
 description: ''
 required: false
 translatable: true

@@ -1,0 +1,35 @@
+uuid: cc468fbb-8946-45f2-8b2c-e6f2dd05da23
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_group
+    - user
+  theme:
+    - t4ddiaspora
+id: groupheroblock
+theme: t4ddiaspora
+region: hero
+weight: -15
+provider: null
+plugin: group_hero_block
+settings:
+  id: group_hero_block
+  label: 'Group hero block'
+  provider: social_group
+  label_display: '0'
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

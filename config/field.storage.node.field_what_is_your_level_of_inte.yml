@@ -1,0 +1,30 @@
+uuid: 6446c52f-260f-4014-9b73-7523a8785dfc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_what_is_your_level_of_inte
+field_name: field_what_is_your_level_of_inte
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Low
+      label: Low
+    -
+      value: Medium
+      label: Medium
+    -
+      value: High
+      label: High
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

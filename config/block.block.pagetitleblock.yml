@@ -1,0 +1,20 @@
+uuid: d9f80d3c-c929-437d-bb91-fad9afb09ddc
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_core
+  theme:
+    - t4ddiaspora
+id: pagetitleblock
+theme: t4ddiaspora
+region: title
+weight: 0
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title block'
+  provider: social_core
+  label_display: '0'
+visibility: {  }

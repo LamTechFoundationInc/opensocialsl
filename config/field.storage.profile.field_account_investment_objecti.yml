@@ -1,0 +1,30 @@
+uuid: 1b980f90-b4b3-47aa-b716-6eec95dfe447
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_account_investment_objecti
+field_name: field_account_investment_objecti
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Income
+      label: Income
+    -
+      value: 'Long Term Growth'
+      label: 'Long Term Growth'
+    -
+      value: 'Short Term Growth'
+      label: 'Short Term Growth'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

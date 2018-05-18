@@ -1,0 +1,9 @@
+uuid: 871c8f8b-f571-4b30-ae30-9389193c3e46
+langcode: en
+status: true
+dependencies: {  }
+name: 'Diaspora Resources'
+vid: diaspora_resources
+description: ''
+hierarchy: 0
+weight: 0

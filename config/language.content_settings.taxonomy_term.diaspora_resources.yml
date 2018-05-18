@@ -1,0 +1,11 @@
+uuid: 388e5a8b-78f6-4580-8bfb-d3546e94d256
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.diaspora_resources
+id: taxonomy_term.diaspora_resources
+target_entity_type_id: taxonomy_term
+target_bundle: diaspora_resources
+default_langcode: site_default
+language_alterable: false

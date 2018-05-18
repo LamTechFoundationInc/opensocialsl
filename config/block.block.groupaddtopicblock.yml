@@ -1,0 +1,33 @@
+uuid: e7443ec0-d0cb-4aa4-b061-e2b181cdae2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_group
+    - user
+  theme:
+    - t4ddiaspora
+id: groupaddtopicblock
+theme: t4ddiaspora
+region: complementary_top
+weight: -17
+provider: null
+plugin: group_add_topic_block
+settings:
+  id: group_add_topic_block
+  label: 'Group add topic block'
+  provider: social_group
+  label_display: visible
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -14,7 +14,7 @@ _core:
 id: t4ddiaspora_exposed_form_newest_groups_page_all_groups
 theme: t4ddiaspora
 region: complementary_top
-weight: 0
+weight: -12
 provider: null
 plugin: 'views_exposed_filter_block:newest_groups-page_all_groups'
 settings:

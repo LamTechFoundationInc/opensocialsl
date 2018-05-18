@@ -1,0 +1,28 @@
+uuid: b42ae421-153c-4033-9b33-64a3892f5dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_concept_posters
+    - node.type.business_concepts
+    - node.type.smes_profile
+id: node.smes_profile.field_concept_posters
+field_name: field_concept_posters
+entity_type: node
+bundle: smes_profile
+label: 'Concept Posters'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      business_concepts: business_concepts
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

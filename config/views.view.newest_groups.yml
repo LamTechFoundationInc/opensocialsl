@@ -7,6 +7,7 @@ dependencies:
     - core.entity_view_mode.group.teaser
   module:
     - group
+    - options
     - user
 _core:
   default_config_hash: m59mmgLMtOnt0MSyksk0IBtUNeEDnRLhyjKNf_aUWSU
@@ -28,7 +29,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access group search'
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -269,6 +270,50 @@ display:
           entity_type: group
           entity_field: type
           plugin_id: bundle
+        field_group_category_value:
+          id: field_group_category_value
+          table: group__field_group_category
+          field: field_group_category_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_group_category_value_op
+            label: 'Group Category'
+            description: ''
+            use_operator: false
+            operator: field_group_category_value_op
+            identifier: field_group_category_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              diasporan: '0'
+              member: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
       defaults:
         filters: false
         filter_groups: false

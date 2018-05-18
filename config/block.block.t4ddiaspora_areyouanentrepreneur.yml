@@ -12,8 +12,8 @@ dependencies:
     - t4ddiaspora
 id: t4ddiaspora_areyouanentrepreneur
 theme: t4ddiaspora
-region: hero
-weight: -5
+region: content_top_cta
+weight: -9
 provider: null
 plugin: 'block_content:e5904889-b858-46d7-b908-ec432e59a8b8'
 settings:

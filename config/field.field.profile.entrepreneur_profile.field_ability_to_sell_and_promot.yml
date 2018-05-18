@@ -1,0 +1,23 @@
+uuid: 373efa5c-76b1-42b8-8f88-896eb064cd84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_ability_to_sell_and_promot
+    - profile.type.entrepreneur_profile
+id: profile.entrepreneur_profile.field_ability_to_sell_and_promot
+field_name: field_ability_to_sell_and_promot
+entity_type: profile
+bundle: entrepreneur_profile
+label: 'Do you have the ability to sell and promote?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -8,9 +8,9 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: 'SMEs Profile'
+name: 'Small to Medium Enterprise Profile'
 type: smes_profile
-description: 'Small and Medium Scale Enterprises (SMEs)'
+description: 'Use Small to Medium Enterprise to add your SME to our database'
 help: ''
 new_revision: true
 preview_mode: 1

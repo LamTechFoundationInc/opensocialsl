@@ -1,0 +1,23 @@
+uuid: 16ade3f9-b344-48af-8101-b5f9fb915b37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_category
+    - group.type.open_group
+  module:
+    - options
+id: group.open_group.field_group_category
+field_name: field_group_category
+entity_type: group
+bundle: open_group
+label: 'Group Category'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 'Industry Group'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

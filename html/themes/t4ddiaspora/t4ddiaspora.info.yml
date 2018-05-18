@@ -116,10 +116,27 @@ regions:
   secondary_navigation: Secondary navigation
   content_top: Content top
   title: Page title
+  content_top_two: Content top one column first
+  content_top_two_first: Content top two column first
+  content_top_two_second: Content top two column second
+  content_top_three: Content top one column second
+  content_top_three_first: Content top two column first
+  content_top_three_second: Content top two column Second
+  content_top_three_third: Content top two column Third
+  content_top_cta: Content Top CTA
   content: Content
+  content_bottom_cta: Content bottom CTA
+  content_bottom_two: Content bottom one column first
+  content_bottom_two_first: Content bottom two column first
+  content_bottom_two_second: Content bottom two column second
+  content_bottom_three: Content bottom one column Second
+  content_bottom_three_first: Content bottom two column first
+  content_bottom_three_second: Content bottom two column second
+  content_bottom_three_third: Content bottom two column Third
   complementary_top: Complementary top
   complementary_bottom: Complementary bottom
   content_bottom: Content bottom
   sidebar_first: Sidebar First
   sidebar_second: Sidebar Second
+  footer_sub: Footer Sub
   footer: Footer

@@ -1,0 +1,30 @@
+uuid: 329eee95-6621-46d5-8641-f82fa514dcf1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type_of_sme_entity
+field_name: field_type_of_sme_entity
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Partnership
+      label: Partnership
+    -
+      value: 'Sole Proprietorship'
+      label: 'Sole Proprietorship'
+    -
+      value: Company
+      label: Company
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

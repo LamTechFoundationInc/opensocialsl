@@ -1,0 +1,19 @@
+uuid: 7fe3279c-c9d4-455b-8416-b86bd82aabaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_why_might_it_fail
+    - node.type.business_concepts
+id: node.business_concepts.field_why_might_it_fail
+field_name: field_why_might_it_fail
+entity_type: node
+bundle: business_concepts
+label: 'Why might it fail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,177 @@
+uuid: d1431f45-51fe-4248-bd04-f280aa3d545f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.business_concepts.body
+    - field.field.node.business_concepts.field_how_might_we_measure_succe
+    - field.field.node.business_concepts.field_how_will_we_make_this_happ
+    - field.field.node.business_concepts.field_upload_supporting_document
+    - field.field.node.business_concepts.field_what_diaspora_resources
+    - field.field.node.business_concepts.field_what_is_the_big_idea
+    - field.field.node.business_concepts.field_what_opportunity_does_it_a
+    - field.field.node.business_concepts.field_what_should_we_prototype_t
+    - field.field.node.business_concepts.field_who_is_it_for
+    - field.field.node.business_concepts.field_why_might_it_fail
+    - node.type.business_concepts
+  module:
+    - inline_entity_form
+    - path
+    - text
+id: node.business_concepts.default
+targetEntityType: node
+bundle: business_concepts
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_how_might_we_measure_succe:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_how_will_we_make_this_happ:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_upload_supporting_document:
+    weight: 10
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Supporting Document'
+      label_plural: 'Supporting Documents'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  field_what_diaspora_resources:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_what_is_the_big_idea:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_what_opportunity_does_it_a:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_what_should_we_prototype_t:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_who_is_it_for:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_why_might_it_fail:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  groups:
+    type: options_select
+    settings: {  }
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 12
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 18
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

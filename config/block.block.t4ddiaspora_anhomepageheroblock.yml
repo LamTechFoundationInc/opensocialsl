@@ -1,6 +1,6 @@
 uuid: f575da17-e5e0-4096-9beb-b9de41c5099e
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:hero_call_to_action_block:8bb9d4bb-f182-4afc-b138-8a4b802824e4'
@@ -13,7 +13,7 @@ dependencies:
 id: t4ddiaspora_anhomepageheroblock
 theme: t4ddiaspora
 region: hero
-weight: -6
+weight: -9
 provider: null
 plugin: 'block_content:8bb9d4bb-f182-4afc-b138-8a4b802824e4'
 settings:

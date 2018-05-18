@@ -1,0 +1,38 @@
+uuid: d32eca67-7d1f-4e70-a5cb-69a36b937aa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.group_managers
+  module:
+    - user
+    - views
+  theme:
+    - t4ddiaspora
+id: views_block__group_managers_block_list_managers
+theme: t4ddiaspora
+region: complementary_top
+weight: -11
+provider: null
+plugin: 'views_block:group_managers-block_list_managers'
+settings:
+  id: 'views_block:group_managers-block_list_managers'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,23 @@
+uuid: 013c1328-982f-4415-a46a-bc98d56519d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_average_annual_revenue
+    - node.type.smes_profile
+id: node.smes_profile.field_average_annual_revenue
+field_name: field_average_annual_revenue
+entity_type: node
+bundle: smes_profile
+label: 'Average Annual Revenue'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

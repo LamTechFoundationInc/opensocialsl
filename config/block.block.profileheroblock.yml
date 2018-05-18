@@ -1,0 +1,41 @@
+uuid: 6740a90d-02d7-45e7-91f3-c827423c9693
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_profile
+    - system
+    - user
+  theme:
+    - t4ddiaspora
+id: profileheroblock
+theme: t4ddiaspora
+region: hero
+weight: -16
+provider: null
+plugin: profile_hero_block
+settings:
+  id: profile_hero_block
+  label: 'Profile hero block'
+  provider: social_profile
+  label_display: '0'
+  context_mapping:
+    user: '@social_user.user_route_context:user'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@social_user.user_route_context:user'

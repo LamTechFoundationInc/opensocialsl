@@ -1,0 +1,21 @@
+uuid: d203c25c-49af-4ee6-9cde-01bd5cafe1d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_sme_entity
+    - node.type.smes_profile
+  module:
+    - options
+id: node.smes_profile.field_type_of_sme_entity
+field_name: field_type_of_sme_entity
+entity_type: node
+bundle: smes_profile
+label: 'Type of SME Entity'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

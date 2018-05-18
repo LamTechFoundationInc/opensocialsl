@@ -1,0 +1,39 @@
+uuid: 2a210adc-ba35-41c1-b547-7a4711b40195
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_event
+    - system
+    - user
+  theme:
+    - t4ddiaspora
+id: eventaddblock
+theme: t4ddiaspora
+region: complementary_top
+weight: -19
+provider: null
+plugin: event_add_block
+settings:
+  id: event_add_block
+  label: 'Event add block'
+  provider: social_event
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/events'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@social_user.user_route_context:user'

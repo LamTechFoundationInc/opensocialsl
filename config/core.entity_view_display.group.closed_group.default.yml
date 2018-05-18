@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.group.closed_group.field_group_address
+    - field.field.group.closed_group.field_group_category
     - field.field.group.closed_group.field_group_description
     - field.field.group.closed_group.field_group_image
     - field.field.group.closed_group.field_group_location
     - group.type.closed_group
+  module:
+    - options
 _core:
   default_config_hash: g37peTyyFxA0_hh7tpq1CGvYGO220Fzc8iTFH6eZATM
 id: group.closed_group.default
@@ -15,6 +18,13 @@ targetEntityType: group
 bundle: closed_group
 mode: default
 content:
+  field_group_category:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_group_description:
     type: basic_string
     weight: 0
@@ -30,4 +40,5 @@ hidden:
   field_group_image: true
   field_group_location: true
   label: true
+  langcode: true
   uid: true

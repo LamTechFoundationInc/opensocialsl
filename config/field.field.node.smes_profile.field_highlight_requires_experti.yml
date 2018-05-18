@@ -1,0 +1,29 @@
+uuid: c429ae86-9df9-4211-ab2c-99d90df961e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_highlight_requires_experti
+    - node.type.smes_profile
+    - taxonomy.vocabulary.top_expertise_areas_of_interest
+id: node.smes_profile.field_highlight_requires_experti
+field_name: field_highlight_requires_experti
+entity_type: node
+bundle: smes_profile
+label: 'Highlight which (if any) of the following areas your SME requires expertise'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      top_expertise_areas_of_interest: top_expertise_areas_of_interest
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

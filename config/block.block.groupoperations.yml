@@ -1,0 +1,27 @@
+uuid: 43cf3042-d733-48f3-a10a-d183d1e8dc29
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - system
+  theme:
+    - t4ddiaspora
+id: groupoperations
+theme: t4ddiaspora
+region: sidebar_second
+weight: 0
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Group operations'
+  provider: group
+  label_display: visible
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*'
+    negate: false
+    context_mapping: {  }

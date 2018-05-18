@@ -1,0 +1,19 @@
+uuid: 6dad4209-9b1e-4658-8d55-26cc597a813a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_describe_the_need_support_
+field_name: field_describe_the_need_support_
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

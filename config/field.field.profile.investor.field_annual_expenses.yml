@@ -1,0 +1,21 @@
+uuid: af0e4dc8-d080-4e60-8448-0f6399748517
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_annual_expenses
+    - profile.type.investor
+  module:
+    - options
+id: profile.investor.field_annual_expenses
+field_name: field_annual_expenses
+entity_type: profile
+bundle: investor
+label: 'Annual Expenses'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

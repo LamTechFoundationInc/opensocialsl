@@ -1,0 +1,25 @@
+uuid: 53deda39-a9bb-443d-ba19-23f43da374c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:85ee07e5-595c-4992-b332-cd8783a853f0'
+  module:
+    - block_content
+  theme:
+    - t4ddiaspora
+id: simpletext
+theme: t4ddiaspora
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:85ee07e5-595c-4992-b332-cd8783a853f0'
+settings:
+  id: 'block_content:85ee07e5-595c-4992-b332-cd8783a853f0'
+  label: 'Simple Text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

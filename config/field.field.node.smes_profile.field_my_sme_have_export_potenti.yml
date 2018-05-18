@@ -1,0 +1,23 @@
+uuid: 3acd7368-3123-4984-83cb-cf119e40ac74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_sme_have_export_potenti
+    - node.type.smes_profile
+id: node.smes_profile.field_my_sme_have_export_potenti
+field_name: field_my_sme_have_export_potenti
+entity_type: node
+bundle: smes_profile
+label: 'My SME have export potential'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

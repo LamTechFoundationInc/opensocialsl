@@ -1,0 +1,35 @@
+uuid: f6eb86ef-9386-4be6-9877-7c6cd931faa6
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_user
+    - user
+  theme:
+    - t4ddiaspora
+id: accountheaderblock
+theme: t4ddiaspora
+region: header
+weight: -12
+provider: null
+plugin: account_header_block
+settings:
+  id: account_header_block
+  label: 'Account header block'
+  provider: social_user
+  label_display: '0'
+  context_mapping:
+    user: '@user.current_user_context:current_user'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

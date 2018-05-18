@@ -4,8 +4,30 @@ status: true
 dependencies:
   config:
     - field.field.node.smes_profile.body
+    - field.field.node.smes_profile.field_average_annual_expenditure
+    - field.field.node.smes_profile.field_average_annual_profit_loss
+    - field.field.node.smes_profile.field_average_annual_revenue
+    - field.field.node.smes_profile.field_collaborate_with_diaspora
+    - field.field.node.smes_profile.field_concept_posters
+    - field.field.node.smes_profile.field_date_established
+    - field.field.node.smes_profile.field_describe_the_need_support_
+    - field.field.node.smes_profile.field_email_address
+    - field.field.node.smes_profile.field_export_potential_area
+    - field.field.node.smes_profile.field_highlight_requires_experti
+    - field.field.node.smes_profile.field_my_sme_have_export_potenti
+    - field.field.node.smes_profile.field_official_sme_address
+    - field.field.node.smes_profile.field_phone_number
+    - field.field.node.smes_profile.field_type_of_sme_entity
+    - field.field.node.smes_profile.field_upload_sme_profile_or_powe
+    - field.field.node.smes_profile.field_what_is_the_development_st
+    - field.field.node.smes_profile.field_what_is_the_industry_of_yo
+    - field.field.node.smes_profile.field_what_is_your_level_of_inte
+    - field.field.node.smes_profile.field_willing_to_collaborate_wit
     - node.type.smes_profile
   module:
+    - address
+    - datetime
+    - options
     - text
     - user
 id: node.smes_profile.default
@@ -19,6 +41,165 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_average_annual_expenditure:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_average_annual_profit_loss:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_average_annual_revenue:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_collaborate_with_diaspora:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_concept_posters:
+    weight: 120
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_date_established:
+    weight: 107
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_describe_the_need_support_:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_email_address:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_export_potential_area:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_highlight_requires_experti:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_my_sme_have_export_potenti:
+    weight: 112
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_official_sme_address:
+    weight: 113
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_phone_number:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_type_of_sme_entity:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_upload_sme_profile_or_powe:
+    type: entity_reference_entity_view
+    weight: 116
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_what_is_the_development_st:
+    weight: 117
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_what_is_the_industry_of_yo:
+    weight: 118
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_what_is_your_level_of_inte:
+    weight: 119
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_willing_to_collaborate_wit:
+    weight: 102
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   flag_follow_content:
     weight: 10
@@ -60,3 +241,5 @@ content:
     region: content
 hidden:
   addtoany: true
+  langcode: true
+  private_message_link: true

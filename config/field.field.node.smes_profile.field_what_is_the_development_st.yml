@@ -1,0 +1,21 @@
+uuid: 90f193c2-02cd-40c5-92e6-e8ce49282ac0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_is_the_development_st
+    - node.type.smes_profile
+  module:
+    - options
+id: node.smes_profile.field_what_is_the_development_st
+field_name: field_what_is_the_development_st
+entity_type: node
+bundle: smes_profile
+label: 'What is the development stage of your SME?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

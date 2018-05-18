@@ -19,11 +19,11 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_sme_organization
     - image.style.social_x_large
     - profile.type.profile
   module:
     - address
-    - dropdown
     - field_group
     - image_widget_crop
     - telephone
@@ -32,12 +32,15 @@ third_party_settings:
   field_group:
     group_profile_names_image:
       children:
+        - field_place_of_origin
         - field_profile_first_name
         - field_profile_last_name
+        - field_gender
+        - field_age_range
         - field_profile_image
         - field_profile_banner_image
       parent_name: ''
-      weight: 4
+      weight: 0
       label: 'Names and profile image'
       format_type: fieldset
       format_settings:
@@ -45,13 +48,14 @@ third_party_settings:
         required_fields: true
         id: name
         classes: scrollspy
-      region: hidden
+      region: content
     group_profile_funct_organization:
       children:
         - field_profile_function
         - field_profile_organization
+        - field_sme_organization
       parent_name: ''
-      weight: 5
+      weight: 1
       label: 'Function and organization'
       format_type: fieldset
       format_settings:
@@ -59,15 +63,15 @@ third_party_settings:
         required_fields: true
         id: work
         classes: scollspy
-      region: hidden
+      region: content
     group_profile_self_intro:
       children:
-        - field_profile_self_introduction
-        - field_profile_expertise
         - field_profile_interests
+        - field_profile_expertise
+        - field_profile_self_introduction
         - field_profile_profile_tag
       parent_name: ''
-      weight: 7
+      weight: 2
       label: 'Self introduction, expertise and interests'
       format_type: fieldset
       format_settings:
@@ -75,14 +79,13 @@ third_party_settings:
         required_fields: true
         id: details
         classes: scrollspy
-      region: hidden
+      region: content
     group_profile_contact_info:
       children:
         - field_profile_phone_number
         - field_profile_address
-        - field_gender
       parent_name: ''
-      weight: 6
+      weight: 3
       label: 'Phone number and location'
       format_type: fieldset
       format_settings:
@@ -90,7 +93,7 @@ third_party_settings:
         required_fields: true
         id: contact
         classes: scollspy
-      region: hidden
+      region: content
 _core:
   default_config_hash: q5dRMlfrlHczeboqgnggDsIvBp1Z0aun2cMsa4qIDbQ
 id: profile.profile.default
@@ -99,16 +102,16 @@ bundle: profile
 mode: default
 content:
   field_age_range:
-    weight: 2
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_gender:
-    weight: 1
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    type: dropdown_widget_type
+    type: options_select
     region: content
   field_place_of_origin:
     weight: 0
@@ -117,14 +120,14 @@ content:
     type: address_country_default
     region: content
   field_profile_address:
-    weight: 7
+    weight: 4
     settings:
       default_country: site_default
     third_party_settings: {  }
     type: address_default
     region: content
   field_profile_banner_image:
-    weight: 11
+    weight: 6
     settings:
       show_crop_area: true
       show_default_crop: true
@@ -138,7 +141,7 @@ content:
     type: image_widget_crop
     region: content
   field_profile_expertise:
-    weight: 13
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60
@@ -147,7 +150,7 @@ content:
     type: entity_reference_autocomplete_tags
     region: content
   field_profile_first_name:
-    weight: 8
+    weight: 1
     settings:
       size: 60
       placeholder: ''
@@ -155,7 +158,7 @@ content:
     type: string_textfield
     region: content
   field_profile_function:
-    weight: 16
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -163,7 +166,7 @@ content:
     type: string_textfield
     region: content
   field_profile_image:
-    weight: 10
+    weight: 5
     settings:
       show_default_crop: true
       preview_image_style: social_x_large
@@ -180,16 +183,13 @@ content:
     type: image_widget_crop
     region: content
   field_profile_interests:
-    weight: 14
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    weight: 9
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: options_select
     region: content
   field_profile_last_name:
-    weight: 9
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -197,7 +197,7 @@ content:
     type: string_textfield
     region: content
   field_profile_organization:
-    weight: 17
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -205,25 +205,40 @@ content:
     type: string_textfield
     region: content
   field_profile_phone_number:
-    weight: 6
+    weight: 3
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_profile_profile_tag:
-    weight: 15
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_profile_self_introduction:
-    weight: 12
+    weight: 11
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
-hidden:
-  field_profile_show_email: true
+  field_profile_show_email:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_sme_organization:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+hidden: {  }

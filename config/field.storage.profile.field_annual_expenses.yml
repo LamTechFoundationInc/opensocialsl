@@ -1,0 +1,36 @@
+uuid: c03c9604-3d25-4979-9115-955b78a6c720
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_annual_expenses
+field_name: field_annual_expenses
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Less than 50,000'
+      label: 'Less than 50,000'
+    -
+      value: '50,000 - 100,000'
+      label: '50,000 - 100,000'
+    -
+      value: '100,000 - 250,000'
+      label: '100,000 - 250,000'
+    -
+      value: '250,000 - 500,000'
+      label: '250,000 - 500,000'
+    -
+      value: 'Greater than 500,000'
+      label: 'Greater than 500,000'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

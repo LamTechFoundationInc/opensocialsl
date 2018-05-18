@@ -1,0 +1,19 @@
+uuid: 22f531aa-5c66-4552-9648-8836e2425d14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_opportunity_does_it_a
+    - node.type.business_concepts
+id: node.business_concepts.field_what_opportunity_does_it_a
+field_name: field_what_opportunity_does_it_a
+entity_type: node
+bundle: business_concepts
+label: 'What Opportunity Does it address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

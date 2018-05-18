@@ -1,0 +1,19 @@
+uuid: a51068f3-5439-4d3b-971a-f79609f8caa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_is_the_big_idea
+    - node.type.business_concepts
+id: node.business_concepts.field_what_is_the_big_idea
+field_name: field_what_is_the_big_idea
+entity_type: node
+bundle: business_concepts
+label: 'What is the big idea'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

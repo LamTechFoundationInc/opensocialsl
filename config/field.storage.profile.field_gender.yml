@@ -1,17 +1,27 @@
-uuid: 58b76614-5aa0-4ebc-9e51-0e235ff8de2d
+uuid: a09c0418-8843-4135-92ca-02ddf49d1d92
 langcode: en
 status: true
 dependencies:
   module:
-    - dropdown
+    - options
     - profile
 id: profile.field_gender
 field_name: field_gender
 entity_type: profile
-type: dropdown
+type: list_string
 settings:
-  allowed_values: {  }
-module: dropdown
+  allowed_values:
+    -
+      value: Male
+      label: Male
+    -
+      value: Female
+      label: Female
+    -
+      value: N/A
+      label: N/A
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

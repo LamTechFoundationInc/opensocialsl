@@ -1,0 +1,9 @@
+uuid: 8234f459-1813-4535-99f9-5fa6762feaef
+langcode: en
+status: true
+dependencies: {  }
+name: 'Top Expertise Areas of Interest'
+vid: top_expertise_areas_of_interest
+description: ''
+hierarchy: 0
+weight: 0

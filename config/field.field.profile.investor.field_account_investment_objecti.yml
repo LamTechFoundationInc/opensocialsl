@@ -1,0 +1,21 @@
+uuid: 35631565-adb5-4d2c-addb-a4962ff633a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_account_investment_objecti
+    - profile.type.investor
+  module:
+    - options
+id: profile.investor.field_account_investment_objecti
+field_name: field_account_investment_objecti
+entity_type: profile
+bundle: investor
+label: 'Account Investment Objective'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

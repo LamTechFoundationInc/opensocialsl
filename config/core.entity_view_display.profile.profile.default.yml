@@ -19,10 +19,10 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_sme_organization
     - profile.type.profile
   module:
     - address
-    - dropdown
     - options
     - text
 _core:
@@ -40,11 +40,11 @@ content:
     type: list_default
     region: content
   field_gender:
-    weight: 7
+    weight: 10
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: dropdown_field_formatter
+    type: list_default
     region: content
   field_place_of_origin:
     weight: 6
@@ -98,6 +98,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_sme_organization:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
 hidden:
   field_profile_banner_image: true

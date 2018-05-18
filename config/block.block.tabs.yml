@@ -1,0 +1,20 @@
+uuid: 1a8a465f-b91f-4ed7-9af7-59a06c999e72
+langcode: en
+status: true
+dependencies:
+  theme:
+    - t4ddiaspora
+id: tabs
+theme: t4ddiaspora
+region: hero
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

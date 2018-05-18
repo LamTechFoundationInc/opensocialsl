@@ -1,0 +1,21 @@
+uuid: 5965c2e3-2fa5-4273-aabd-e43197452df6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_established
+    - node.type.smes_profile
+  module:
+    - datetime
+id: node.smes_profile.field_date_established
+field_name: field_date_established
+entity_type: node
+bundle: smes_profile
+label: 'What Date was Your Business Established'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

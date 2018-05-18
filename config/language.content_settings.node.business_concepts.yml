@@ -1,0 +1,11 @@
+uuid: a3a9cf06-8490-4a94-86a2-00b514389671
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.business_concepts
+id: node.business_concepts
+target_entity_type_id: node
+target_bundle: business_concepts
+default_langcode: site_default
+language_alterable: false

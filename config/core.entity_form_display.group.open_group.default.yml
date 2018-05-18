@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.group.open_group.field_group_address
+    - field.field.group.open_group.field_group_category
     - field.field.group.open_group.field_group_description
     - field.field.group.open_group.field_group_image
     - field.field.group.open_group.field_group_location
@@ -31,6 +32,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: hidden
     group_location:
       children:
         - field_group_location
@@ -44,6 +46,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: hidden
 _core:
   default_config_hash: GecjUqtDtil_0FpZKolGp4fP-wdtAmSQGYEGsUnbles
 id: group.open_group.default
@@ -52,11 +55,17 @@ bundle: open_group
 mode: default
 content:
   field_group_address:
-    weight: 33
+    weight: 6
     settings:
       default_country: site_default
     third_party_settings: {  }
     type: address_default
+    region: content
+  field_group_category:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_group_description:
     weight: 2
@@ -77,11 +86,12 @@ content:
         - hero
         - teaser
       progress_indicator: throbber
+      warn_multiple_usages: true
     third_party_settings: {  }
     type: image_widget_crop
     region: content
   field_group_location:
-    weight: 32
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -96,6 +106,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30

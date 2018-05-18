@@ -1,0 +1,25 @@
+uuid: cb24a0c7-acdc-4b2c-968b-6fd3172b36b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.group_members
+  module:
+    - views
+  theme:
+    - t4ddiaspora
+id: views_block__group_members_block_newest_members
+theme: t4ddiaspora
+region: complementary_top
+weight: -10
+provider: null
+plugin: 'views_block:group_members-block_newest_members'
+settings:
+  id: 'views_block:group_members-block_newest_members'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

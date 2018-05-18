@@ -1,0 +1,39 @@
+uuid: 11f20ccc-0ab3-467c-ada4-ad40838b5039
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:hero_call_to_action_block:c548b8c4-89de-4e4c-842f-afd7f06e4fba'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - t4ddiaspora
+id: forentrepreneur
+theme: t4ddiaspora
+region: hero
+weight: -8
+provider: null
+plugin: 'block_content:c548b8c4-89de-4e4c-842f-afd7f06e4fba'
+settings:
+  id: 'block_content:c548b8c4-89de-4e4c-842f-afd7f06e4fba'
+  label: 'For Entrepreneur'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

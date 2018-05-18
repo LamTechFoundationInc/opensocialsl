@@ -1,0 +1,23 @@
+uuid: 1efd89e7-e818-4a0a-8086-b4be325d9751
+langcode: en
+status: true
+dependencies:
+  module:
+    - dynamic_entity_reference
+    - media
+    - node
+id: node.field_upload_sme_profile_or_powe
+field_name: field_upload_sme_profile_or_powe
+entity_type: node
+type: dynamic_entity_reference
+settings:
+  exclude_entity_types: false
+  entity_type_ids:
+    media: media
+module: dynamic_entity_reference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

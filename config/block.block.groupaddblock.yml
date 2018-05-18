@@ -1,0 +1,39 @@
+uuid: fb72d1e7-6bb5-4762-8518-1ebcd7818974
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_group
+    - system
+    - user
+  theme:
+    - t4ddiaspora
+id: groupaddblock
+theme: t4ddiaspora
+region: complementary_top
+weight: -16
+provider: null
+plugin: group_add_block
+settings:
+  id: group_add_block
+  label: 'Group add block'
+  provider: social_group
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@social_user.user_route_context:user'
+  request_path:
+    id: request_path
+    pages: '/user/*/groups'
+    negate: false
+    context_mapping: {  }

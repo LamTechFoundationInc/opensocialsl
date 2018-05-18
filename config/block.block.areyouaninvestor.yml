@@ -1,0 +1,39 @@
+uuid: ad803121-daa0-4dc0-9fe8-9e88f9e1e2a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_call_to_action_block:6aafae95-abd0-4d81-b639-8187a1cd4ccb'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - t4ddiaspora
+id: areyouaninvestor
+theme: t4ddiaspora
+region: hero
+weight: -11
+provider: null
+plugin: 'block_content:6aafae95-abd0-4d81-b639-8187a1cd4ccb'
+settings:
+  id: 'block_content:6aafae95-abd0-4d81-b639-8187a1cd4ccb'
+  label: 'Are you an Investor?'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

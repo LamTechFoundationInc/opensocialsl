@@ -1,0 +1,21 @@
+uuid: c84780e8-27ff-473e-9fe8-77b141604f06
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_how_will_we_make_this_happ
+field_name: field_how_will_we_make_this_happ
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: adb13221-1ecb-4d2e-8fd2-c707f837b0f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_what_diaspora_resources
+    - node.type.business_concepts
+    - taxonomy.vocabulary.diaspora_resources
+id: node.business_concepts.field_what_diaspora_resources
+field_name: field_what_diaspora_resources
+entity_type: node
+bundle: business_concepts
+label: 'What Diaspora Resources might be leveraged'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      diaspora_resources: diaspora_resources
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

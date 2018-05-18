@@ -1,0 +1,40 @@
+uuid: 1d3f9e67-a69e-482d-ad4c-12d0bdd647de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_reference_secondary
+    - paragraphs.paragraphs_type.block
+  module:
+    - block_field
+_core:
+  default_config_hash: 92d10xM80SAkkM8MMLESkQ6v-Nvn3YKbjyUyblXFfBE
+id: paragraph.block.field_block_reference_secondary
+field_name: field_block_reference_secondary
+entity_type: paragraph
+bundle: block
+label: Secondary
+description: 'A secondary block will be printed in a side column, keep in mind it will take 1/3'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    'block_content:8bb9d4bb-f182-4afc-b138-8a4b802824e4': 'block_content:8bb9d4bb-f182-4afc-b138-8a4b802824e4'
+    'block_content:e5904889-b858-46d7-b908-ec432e59a8b8': 'block_content:e5904889-b858-46d7-b908-ec432e59a8b8'
+    'block_content:6aafae95-abd0-4d81-b639-8187a1cd4ccb': 'block_content:6aafae95-abd0-4d81-b639-8187a1cd4ccb'
+    'block_content:6cbb5369-c0cf-47c6-b3e7-ede3e374f8c1': 'block_content:6cbb5369-c0cf-47c6-b3e7-ede3e374f8c1'
+    'block_content:814e8abe-9003-4a23-b36f-bf74fc3440f8': 'block_content:814e8abe-9003-4a23-b36f-bf74fc3440f8'
+    'block_content:c548b8c4-89de-4e4c-842f-afd7f06e4fba': 'block_content:c548b8c4-89de-4e4c-842f-afd7f06e4fba'
+    'block_content:85ee07e5-595c-4992-b332-cd8783a853f0': 'block_content:85ee07e5-595c-4992-b332-cd8783a853f0'
+    'block_content:c47a84fa-92bb-435b-b070-b20c57f70c4d': 'block_content:c47a84fa-92bb-435b-b070-b20c57f70c4d'
+    'block_content:b4ce7494-0267-404f-b9d1-95f6b8a9bbdf': 'block_content:b4ce7494-0267-404f-b9d1-95f6b8a9bbdf'
+    'block_content:6f9c2c68-e93a-4e09-b14a-f2cadfab0003': 'block_content:6f9c2c68-e93a-4e09-b14a-f2cadfab0003'
+    'block_content:9572b4dd-b217-4c49-8cec-9fc876909d56': 'block_content:9572b4dd-b217-4c49-8cec-9fc876909d56'
+    'views_block:upcoming_events-block_community_events': 'views_block:upcoming_events-block_community_events'
+    'views_block:latest_topics-block_latest_topics': 'views_block:latest_topics-block_latest_topics'
+    'views_block:newest_groups-block_newest_groups': 'views_block:newest_groups-block_newest_groups'
+    'views_block:newest_users-block_newest_users': 'views_block:newest_users-block_newest_users'
+    activity_overview_block: activity_overview_block
+field_type: block_field

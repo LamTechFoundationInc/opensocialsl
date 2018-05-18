@@ -12,7 +12,7 @@ dependencies:
 id: t4ddiaspora_views_block__activity_stream_group_block_stream_group
 theme: t4ddiaspora
 region: content
-weight: -5
+weight: -10
 provider: null
 plugin: 'views_block:activity_stream_group-block_stream_group'
 settings:

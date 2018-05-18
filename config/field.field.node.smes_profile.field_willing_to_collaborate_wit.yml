@@ -1,0 +1,23 @@
+uuid: f4da1969-c569-4e60-b77f-c3312c8a080a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_willing_to_collaborate_wit
+    - node.type.smes_profile
+id: node.smes_profile.field_willing_to_collaborate_wit
+field_name: field_willing_to_collaborate_wit
+entity_type: node
+bundle: smes_profile
+label: 'Are you willing to collaboration with people in the Diaspora'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

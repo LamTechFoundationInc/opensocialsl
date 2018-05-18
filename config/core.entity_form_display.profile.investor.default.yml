@@ -1,0 +1,33 @@
+uuid: 66e31059-02d0-4cb7-9aff-e72989c42e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.investor.field_account_investment_objecti
+    - field.field.profile.investor.field_annual_expenses
+    - field.field.profile.investor.field_annual_income
+    - profile.type.investor
+id: profile.investor.default
+targetEntityType: profile
+bundle: investor
+mode: default
+content:
+  field_account_investment_objecti:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_annual_expenses:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_annual_income:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden: {  }

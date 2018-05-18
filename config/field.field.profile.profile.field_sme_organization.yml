@@ -1,0 +1,28 @@
+uuid: 477c66a6-00e1-4ab7-bee4-ad62b670a2dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_sme_organization
+    - node.type.smes_profile
+    - profile.type.profile
+id: profile.profile.field_sme_organization
+field_name: field_sme_organization
+entity_type: profile
+bundle: profile
+label: 'SME Profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      smes_profile: smes_profile
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

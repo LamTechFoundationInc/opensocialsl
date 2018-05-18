@@ -1,0 +1,39 @@
+uuid: 408ccd7f-2323-4b3f-a475-3e35f664d1b5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_call_to_action_block:b4ce7494-0267-404f-b9d1-95f6b8a9bbdf'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - t4ddiaspora
+id: welcometoinvestmentportal
+theme: t4ddiaspora
+region: hero
+weight: -12
+provider: null
+plugin: 'block_content:b4ce7494-0267-404f-b9d1-95f6b8a9bbdf'
+settings:
+  id: 'block_content:b4ce7494-0267-404f-b9d1-95f6b8a9bbdf'
+  label: 'Welcome to Investment Portal'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/node/33"
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

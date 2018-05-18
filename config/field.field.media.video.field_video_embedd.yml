@@ -1,0 +1,25 @@
+uuid: fa5518d7-27d4-48e6-8b6e-5a758b5fea54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_embedd
+    - media.type.video
+  module:
+    - video_embed_field
+id: media.video.field_video_embedd
+field_name: field_video_embedd
+entity_type: media
+bundle: video
+label: 'Video Embedd'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

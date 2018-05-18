@@ -1,0 +1,19 @@
+uuid: 82a78908-ba8c-46ba-afb7-0575977beeab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_how_will_we_make_this_happ
+    - node.type.business_concepts
+id: node.business_concepts.field_how_will_we_make_this_happ
+field_name: field_how_will_we_make_this_happ
+entity_type: node
+bundle: business_concepts
+label: 'How will we make this happen'
+description: 'Action steps, timeline and budget'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

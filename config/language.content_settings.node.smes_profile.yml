@@ -1,0 +1,11 @@
+uuid: 87ba75f3-d52f-48e2-9f78-d311a5df24b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.smes_profile
+id: node.smes_profile
+target_entity_type_id: node
+target_bundle: smes_profile
+default_langcode: site_default
+language_alterable: false

@@ -14,7 +14,7 @@ _core:
 id: t4ddiaspora_exposedformfollowingfollowing
 theme: t4ddiaspora
 region: complementary_top
-weight: 0
+weight: -13
 provider: null
 plugin: 'views_exposed_filter_block:following-following'
 settings:

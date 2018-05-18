@@ -1,0 +1,20 @@
+uuid: ab81285b-5af8-469a-80cc-cc0ea76d412d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_what_diaspora_resources
+field_name: field_what_diaspora_resources
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

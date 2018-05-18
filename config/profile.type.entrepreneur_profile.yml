@@ -1,0 +1,18 @@
+uuid: 37e0b1be-d279-4222-bf48-501a9691448b
+langcode: en
+status: true
+dependencies: {  }
+id: entrepreneur_profile
+label: Entrepreneur
+registration: false
+multiple: false
+roles:
+  diasporan: diasporan
+  member: member
+  contentmanager: contentmanager
+  sitemanager: sitemanager
+  administrator: administrator
+  authenticated: '0'
+weight: 0
+use_revisions: false
+description: 'This is the default entrepreneur profile'

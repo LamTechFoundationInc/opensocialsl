@@ -1,4 +1,4 @@
-uuid: 07fdbd3d-33f0-4b37-8488-96cc231a6267
+uuid: 94ec480e-4762-4679-9987-fd1b76f74ed1
 langcode: en
 status: true
 dependencies:
@@ -6,16 +6,16 @@ dependencies:
     - field.storage.profile.field_gender
     - profile.type.profile
   module:
-    - dropdown
+    - options
 id: profile.profile.field_gender
 field_name: field_gender
 entity_type: profile
 bundle: profile
 label: Gender
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: dropdown
+field_type: list_string

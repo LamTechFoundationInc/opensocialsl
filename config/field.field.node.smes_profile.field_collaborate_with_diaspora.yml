@@ -1,0 +1,21 @@
+uuid: 3a5823a0-3a4d-40ea-b875-8541c3d8c1f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collaborate_with_diaspora
+    - node.type.smes_profile
+  module:
+    - options
+id: node.smes_profile.field_collaborate_with_diaspora
+field_name: field_collaborate_with_diaspora
+entity_type: node
+bundle: smes_profile
+label: 'collaborate with diaspora'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

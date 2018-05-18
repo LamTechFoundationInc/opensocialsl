@@ -1,0 +1,25 @@
+uuid: 4d27f3f2-f17b-47ed-9036-0d7564370a1a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c47a84fa-92bb-435b-b070-b20c57f70c4d'
+  module:
+    - block_content
+  theme:
+    - t4ddiaspora
+id: testingplaintext
+theme: t4ddiaspora
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:c47a84fa-92bb-435b-b070-b20c57f70c4d'
+settings:
+  id: 'block_content:c47a84fa-92bb-435b-b070-b20c57f70c4d'
+  label: 'Testing Plain Text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,39 @@
+uuid: 545ee6ef-52fe-4a42-aa9d-2bd751473d92
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_call_to_action_block:814e8abe-9003-4a23-b36f-bf74fc3440f8'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - t4ddiaspora
+id: areyouasmalltomediumenterprisesme
+theme: t4ddiaspora
+region: content_bottom_cta
+weight: -9
+provider: null
+plugin: 'block_content:814e8abe-9003-4a23-b36f-bf74fc3440f8'
+settings:
+  id: 'block_content:814e8abe-9003-4a23-b36f-bf74fc3440f8'
+  label: 'Are you a ‎Small to medium Enterprise (SME)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

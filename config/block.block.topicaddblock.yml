@@ -1,0 +1,39 @@
+uuid: 51b687f9-0ad6-4ab6-a5bd-6e5bc105a6b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_topic
+    - system
+    - user
+  theme:
+    - t4ddiaspora
+id: topicaddblock
+theme: t4ddiaspora
+region: complementary_top
+weight: -15
+provider: null
+plugin: topic_add_block
+settings:
+  id: topic_add_block
+  label: 'Topic add block'
+  provider: social_topic
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@social_user.user_route_context:user'
+  request_path:
+    id: request_path
+    pages: '/user/*/topics'
+    negate: false
+    context_mapping: {  }

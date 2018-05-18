@@ -1,0 +1,23 @@
+uuid: 7d338b91-0348-41f0-a5db-caa7561b10fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_average_annual_profit_loss
+    - node.type.smes_profile
+id: node.smes_profile.field_average_annual_profit_loss
+field_name: field_average_annual_profit_loss
+entity_type: node
+bundle: smes_profile
+label: 'What is Your Average Annual Profit/Loss'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

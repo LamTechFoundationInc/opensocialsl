@@ -1,0 +1,18 @@
+uuid: 38b51ff8-cac0-4575-90b2-a614e8cba15e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.business_concepts
+id: node.business_concepts.title
+field_name: title
+entity_type: node
+bundle: business_concepts
+label: 'What is the concept called'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

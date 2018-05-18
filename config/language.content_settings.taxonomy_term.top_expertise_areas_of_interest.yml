@@ -1,0 +1,11 @@
+uuid: 0df2238f-9b09-4521-80f3-e8a3427ffd03
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.top_expertise_areas_of_interest
+id: taxonomy_term.top_expertise_areas_of_interest
+target_entity_type_id: taxonomy_term
+target_bundle: top_expertise_areas_of_interest
+default_langcode: site_default
+language_alterable: false

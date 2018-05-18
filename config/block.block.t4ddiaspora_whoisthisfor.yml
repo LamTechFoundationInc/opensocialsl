@@ -1,6 +1,6 @@
 uuid: 6122df68-336c-4c6a-921f-0477195f2af3
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:platform_intro:9572b4dd-b217-4c49-8cec-9fc876909d56'

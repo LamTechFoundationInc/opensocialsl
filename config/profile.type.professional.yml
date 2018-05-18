@@ -1,0 +1,18 @@
+uuid: 58a30aab-2618-40f0-9eee-7233792c690c
+langcode: en
+status: true
+dependencies: {  }
+id: professional
+label: Professional
+registration: false
+multiple: false
+roles:
+  diasporan: diasporan
+  member: member
+  contentmanager: contentmanager
+  sitemanager: sitemanager
+  administrator: administrator
+  authenticated: '0'
+weight: 0
+use_revisions: false
+description: 'This is the default professional profile'

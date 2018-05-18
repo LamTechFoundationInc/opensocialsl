@@ -1,0 +1,36 @@
+uuid: 473dadbe-59b4-49e6-997c-d5b563b421e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_what_is_the_development_st
+field_name: field_what_is_the_development_st
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Early
+      label: Early
+    -
+      value: Growth
+      label: Growth
+    -
+      value: Idea
+      label: Idea
+    -
+      value: Late
+      label: Late
+    -
+      value: Seed
+      label: Seed
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

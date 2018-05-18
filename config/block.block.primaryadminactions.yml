@@ -1,0 +1,18 @@
+uuid: 9e3de1d1-2d24-4996-95f7-3fc47a98b2cb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - t4ddiaspora
+id: primaryadminactions
+theme: t4ddiaspora
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
