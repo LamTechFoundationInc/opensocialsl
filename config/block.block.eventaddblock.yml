@@ -22,7 +22,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*/events'
+    pages: "/user/*/events\r\n/user/*\r\n/group/*\r\n/user/*/stream"
     negate: false
     context_mapping: {  }
   user_role:

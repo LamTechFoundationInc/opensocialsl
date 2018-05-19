@@ -12,6 +12,7 @@ permissions:
   - 'access content'
   - 'access content search'
   - 'access group search'
+  - 'create profile profile'
   - 'view download counts'
   - 'view like widget'
   - 'view media'

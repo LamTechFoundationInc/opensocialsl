@@ -13,7 +13,7 @@ dependencies:
 id: areyouaninvestor
 theme: t4ddiaspora
 region: hero
-weight: -11
+weight: -18
 provider: null
 plugin: 'block_content:6aafae95-abd0-4d81-b639-8187a1cd4ccb'
 settings:

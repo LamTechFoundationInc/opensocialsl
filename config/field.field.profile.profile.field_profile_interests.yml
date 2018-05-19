@@ -14,7 +14,7 @@ entity_type: profile
 bundle: profile
 label: 'What Role do you intend to play?'
 description: 'Separate multiple values by a comma.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -25,6 +25,6 @@ settings:
       interests: interests
     sort:
       field: _none
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

@@ -14,7 +14,7 @@ entity_type: profile
 bundle: profile
 label: Expertise
 description: 'Separate multiple values by a comma.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

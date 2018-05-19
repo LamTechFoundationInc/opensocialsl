@@ -9,3 +9,15 @@ modules:
     none:
       formatter: social_swiftmailer
       sender: social_swiftmailer
+  activity_send_email:
+    All:
+      formatter: social_swiftmailer
+      sender: social_swiftmailer
+  user:
+    All:
+      formatter: SMTPMailSystem
+      sender: SMTPMailSystem
+  private_message:
+    All:
+      formatter: social_swiftmailer
+      sender: social_swiftmailer

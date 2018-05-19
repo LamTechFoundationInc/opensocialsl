@@ -1,0 +1,19 @@
+uuid: f16aa0b9-ff3a-4fa6-954a-d4a0542c089a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.public_group
+    - node.type.smes_profile
+  module:
+    - gnode
+    - node
+id: group_content_type_25f1d1e0d4d53
+label: 'Public group: Group node (Small to Medium Enterprise Profile)'
+description: 'Adds <em class="placeholder">Small to Medium Enterprise Profile</em> content to groups both publicly and privately.'
+group_type: public_group
+content_plugin: 'group_node:smes_profile'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

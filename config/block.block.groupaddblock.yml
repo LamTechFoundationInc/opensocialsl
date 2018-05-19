@@ -34,6 +34,6 @@ visibility:
       user: '@social_user.user_route_context:user'
   request_path:
     id: request_path
-    pages: '/user/*/groups'
+    pages: "/user/*/groups\r\n/user/*/topics\r\n/group/*/topics\r\n/group/*/stream\r\n/group/*/about\r\n/group\r\n/user/*\r\n/user/*/stream"
     negate: false
     context_mapping: {  }

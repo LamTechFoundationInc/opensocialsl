@@ -6,7 +6,7 @@ _core:
   default_config_hash: 6-UbVkbj-KqMtzRTQW7ubMUlNAks72UnQ0SRIoLRlgw
 id: profile
 label: Profile
-registration: false
+registration: true
 multiple: false
 roles:
   authenticated: authenticated

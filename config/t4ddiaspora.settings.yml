@@ -1,4 +1,4 @@
-font_primary: Montserrat
+font_primary: '1'
 card_radius: '10'
 form_control_radius: '5'
 button_radius: '10'
@@ -35,17 +35,37 @@ region_wells:
   secondary_navigation: ''
   content_top: ''
   title: ''
+  content_top_two: ''
+  content_top_two_first: ''
+  content_top_two_second: ''
+  content_top_three: ''
+  content_top_three_first: ''
+  content_top_three_second: ''
+  content_top_three_third: ''
+  content_top_cta: ''
   content: ''
+  content_bottom_cta: ''
+  content_bottom_two: ''
+  content_bottom_two_first: ''
+  content_bottom_two_second: ''
+  content_bottom_three: ''
+  content_bottom_three_first: ''
+  content_bottom_three_second: ''
+  content_bottom_three_third: ''
   complementary_top: ''
   complementary_bottom: ''
   content_bottom: ''
   sidebar_first: ''
-  sidebar_second: well
+  sidebar_second: ''
+  footer_sub: ''
   footer: ''
 table_responsive: '-1'
 table: ''
+email_logo: {  }
 features:
   comment_user_picture: true
   comment_user_verification: 1
   favicon: 1
   node_user_picture: true
+button_colorize: 1
+button_iconize: 1

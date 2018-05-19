@@ -11,7 +11,7 @@ dependencies:
 id: profileheroblock
 theme: t4ddiaspora
 region: hero
-weight: -16
+weight: -21
 provider: null
 plugin: profile_hero_block
 settings:

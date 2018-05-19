@@ -13,7 +13,7 @@ dependencies:
 id: welcometoinvestmentportal
 theme: t4ddiaspora
 region: hero
-weight: -12
+weight: -19
 provider: null
 plugin: 'block_content:b4ce7494-0267-404f-b9d1-95f6b8a9bbdf'
 settings:
@@ -27,13 +27,18 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/node/33"
+    pages: '<front>'
     negate: false
     context_mapping: {  }
   user_role:
     id: user_role
     roles:
-      anonymous: anonymous
+      authenticated: authenticated
+      diasporan: diasporan
+      member: member
+      contentmanager: contentmanager
+      sitemanager: sitemanager
+      administrator: administrator
     negate: false
     context_mapping:
-      user: '@user.current_user_context:current_user'
+      user: '@social_user.user_route_context:user'

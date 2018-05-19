@@ -4,13 +4,12 @@ status: true
 dependencies:
   module:
     - social_group
-    - user
   theme:
     - t4ddiaspora
 id: groupheroblock
 theme: t4ddiaspora
 region: hero
-weight: -15
+weight: -21
 provider: null
 plugin: group_hero_block
 settings:
@@ -19,17 +18,4 @@ settings:
   provider: social_group
   label_display: '0'
   context_mapping: {  }
-visibility:
-  user_role:
-    id: user_role
-    roles:
-      anonymous: anonymous
-      authenticated: authenticated
-      diasporan: diasporan
-      member: member
-      contentmanager: contentmanager
-      sitemanager: sitemanager
-      administrator: administrator
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
+visibility: {  }

@@ -6,8 +6,8 @@ dependencies:
     - t4ddiaspora
 id: tabs
 theme: t4ddiaspora
-region: hero
-weight: -14
+region: title
+weight: -19
 provider: null
 plugin: local_tasks_block
 settings:

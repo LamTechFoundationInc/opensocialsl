@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - social_group
+    - system
     - user
   theme:
     - t4ddiaspora
@@ -17,7 +18,7 @@ settings:
   id: group_add_topic_block
   label: 'Group add topic block'
   provider: social_group
-  label_display: visible
+  label_display: '0'
 visibility:
   user_role:
     id: user_role
@@ -30,4 +31,9 @@ visibility:
       administrator: administrator
     negate: false
     context_mapping:
-      user: '@user.current_user_context:current_user'
+      user: '@social_user.user_route_context:user'
+  request_path:
+    id: request_path
+    pages: "/user/*/topics\r\n/group/*/topics\r\n/group/*/stream\r\n/group/*/about\r\n/group\r\n/user/*\r\n/profile\r\n/profile/*"
+    negate: false
+    context_mapping: {  }

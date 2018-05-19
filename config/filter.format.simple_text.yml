@@ -6,7 +6,7 @@ _core:
   default_config_hash: B64FygOPdWuKKxAmCndkKdBwFAI_8J0GRs5XFZFravk
 name: 'Simple text'
 format: simple_text
-weight: 5
+weight: -6
 filters:
   filter_autop:
     id: filter_autop

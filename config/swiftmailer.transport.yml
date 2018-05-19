@@ -1,9 +1,9 @@
-transport: native
-smtp_host: 127.0.0.1
-smtp_port: 25
-smtp_encryption: ''
-smtp_username: ''
-smtp_password: ''
+transport: sendmail
+smtp_host: gmail.com
+smtp_port: 465
+smtp_encryption: ssl
+smtp_username: tamba@tambalamin.me
+smtp_password: MotherSia@1967
 sendmail_path: /usr/sbin/sendmail
 sendmail_mode: bs
 spool_directory: ''

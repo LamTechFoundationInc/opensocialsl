@@ -25,7 +25,9 @@
         "drupal/conditional_fields": "^1.0",
         "drupal/video_embed_field": "^2.0",
         "drupal/webform": "^5.0",
-        "drupal/inline_entity_form": "^1.0"
+        "drupal/inline_entity_form": "^1.0",
+        "drupal/site_audit": "^2.2",
+        "drupal/smtp": "^1.0"
     },
     "repositories": [
         {

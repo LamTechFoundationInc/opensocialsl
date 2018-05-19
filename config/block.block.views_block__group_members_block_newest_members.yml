@@ -16,10 +16,10 @@ provider: null
 plugin: 'views_block:group_members-block_newest_members'
 settings:
   id: 'views_block:group_members-block_newest_members'
-  label: ''
+  label: 'New Members'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'New Members'
   items_per_page: none
   context_mapping: {  }
 visibility: {  }

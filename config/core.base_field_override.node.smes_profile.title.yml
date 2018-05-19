@@ -1,0 +1,18 @@
+uuid: 394a8067-caf0-4a81-9f83-9d85155a0c36
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.smes_profile
+id: node.smes_profile.title
+field_name: title
+entity_type: node
+bundle: smes_profile
+label: 'Full Legal Name of your Business'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

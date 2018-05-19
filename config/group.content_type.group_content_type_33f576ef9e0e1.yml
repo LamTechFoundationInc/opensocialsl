@@ -1,0 +1,19 @@
+uuid: 10c681b7-1d1d-4c73-911f-30cce81c4aae
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.closed_group
+    - node.type.smes_profile
+  module:
+    - gnode
+    - node
+id: group_content_type_33f576ef9e0e1
+label: 'Closed group: Group node (Small to Medium Enterprise Profile)'
+description: 'Adds <em class="placeholder">Small to Medium Enterprise Profile</em> content to groups both publicly and privately.'
+group_type: closed_group
+content_plugin: 'group_node:smes_profile'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

@@ -15,9 +15,11 @@ group_type: closed_group
 permissions_ui: true
 permissions:
   0: 'join group'
-  5: 'view group'
-  7: 'update own group_node:topic entity'
-  8: 'update own group_node:event entity'
-  9: 'access comments'
-  10: 'view group_membership content'
-  11: 'view group stream page'
+  1: 'view group'
+  2: 'update own group_node:topic entity'
+  3: 'update own group_node:event entity'
+  4: 'access comments'
+  5: 'view group_membership content'
+  6: 'view group stream page'
+  11: 'update own group_node:business_concepts entity'
+  13: 'update own group_node:smes_profile entity'

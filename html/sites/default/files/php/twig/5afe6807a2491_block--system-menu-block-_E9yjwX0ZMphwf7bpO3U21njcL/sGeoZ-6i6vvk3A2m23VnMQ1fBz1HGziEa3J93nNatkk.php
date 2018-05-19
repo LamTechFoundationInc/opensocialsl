@@ -1,0 +1,156 @@
+<?php
+
+/* themes/t4ddiaspora/templates/block/block--system-menu-block--main.html.twig */
+class __TwigTemplate_98e21ce1ca68d0772809a91c77fddd9ea6ae324dadd9c77aaf86f87b23b5c225 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->parent = false;
+
+        $this->blocks = array(
+            'content' => array($this, 'block_content'),
+        );
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $tags = array("block" => 38);
+        $filters = array("t" => 43);
+        $functions = array();
+
+        try {
+            $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
+                array('block'),
+                array('t'),
+                array()
+            );
+        } catch (Twig_Sandbox_SecurityError $e) {
+            $e->setSourceContext($this->getSourceContext());
+
+            if ($e instanceof Twig_Sandbox_SecurityNotAllowedTagError && isset($tags[$e->getTagName()])) {
+                $e->setTemplateLine($tags[$e->getTagName()]);
+            } elseif ($e instanceof Twig_Sandbox_SecurityNotAllowedFilterError && isset($filters[$e->getFilterName()])) {
+                $e->setTemplateLine($filters[$e->getFilterName()]);
+            } elseif ($e instanceof Twig_Sandbox_SecurityNotAllowedFunctionError && isset($functions[$e->getFunctionName()])) {
+                $e->setTemplateLine($functions[$e->getFunctionName()]);
+            }
+
+            throw $e;
+        }
+
+        // line 36
+        echo "<div id=\"main-navigation\" class=\"collapse navbar-collapse\">
+  <div class=\"navbar-search\">";
+        // line 37
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, $this->getAttribute($this->getAttribute(($context["content"] ?? null), "links", array()), "search_block", array()), "html", null, true));
+        echo "</div>
+    ";
+        // line 38
+        $this->displayBlock('content', $context, $blocks);
+        // line 41
+        echo "
+    <div class=\"navbar__open-search-control\">
+      <button class=\"navbar__open-search-block\" rel=\"search\" title=\"";
+        // line 43
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->renderVar(t("Click to open search box")));
+        echo "\">
+      </button>
+      <svg class=\"navbar-nav__icon navbar-nav__icon--search\">
+        <use xlink:href=\"#icon-search\"></use>
+      </svg>
+    </div>
+</div>
+
+";
+    }
+
+    // line 38
+    public function block_content($context, array $blocks = array())
+    {
+        // line 39
+        echo "      ";
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->env->getExtension('Drupal\Core\Template\TwigExtension')->escapeFilter($this->env, ($context["content"] ?? null), "html", null, true));
+        echo "
+    ";
+    }
+
+    public function getTemplateName()
+    {
+        return "themes/t4ddiaspora/templates/block/block--system-menu-block--main.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  73 => 39,  70 => 38,  57 => 43,  53 => 41,  51 => 38,  47 => 37,  44 => 36,);
+    }
+
+    /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
+    public function getSource()
+    {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', E_USER_DEPRECATED);
+
+        return $this->getSourceContext()->getCode();
+    }
+
+    public function getSourceContext()
+    {
+        return new Twig_Source("{#
+/**
+ * @file
+ * Default theme implementation for a menu block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: HTML attributes for the containing element.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: HTML attributes for the title element.
+ * - content_attributes: HTML attributes for the content element.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * Headings should be used on navigation menus that consistently appear on
+ * multiple pages. When this menu block's label is configured to not be
+ * displayed, it is automatically made invisible using the 'visually-hidden' CSS
+ * class, which still keeps it visible for screen-readers and assistive
+ * technology. Headings allow screen-reader and keyboard only users to navigate
+ * to or skip the links.
+ * See http://juicystudio.com/article/screen-readers-display-none.php and
+ * http://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
+ *
+ * @ingroup templates
+ */
+#}
+<div id=\"main-navigation\" class=\"collapse navbar-collapse\">
+  <div class=\"navbar-search\">{{ content.links.search_block }}</div>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+
+    <div class=\"navbar__open-search-control\">
+      <button class=\"navbar__open-search-block\" rel=\"search\" title=\"{{ 'Click to open search box'|t }}\">
+      </button>
+      <svg class=\"navbar-nav__icon navbar-nav__icon--search\">
+        <use xlink:href=\"#icon-search\"></use>
+      </svg>
+    </div>
+</div>
+
+", "themes/t4ddiaspora/templates/block/block--system-menu-block--main.html.twig", "/Users/tamba.s.lamin/DEV/opensocial/html/themes/t4ddiaspora/templates/block/block--system-menu-block--main.html.twig");
+    }
+}

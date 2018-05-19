@@ -28,6 +28,7 @@ dependencies:
     - address
     - datetime
     - dynamic_entity_reference
+    - inline_entity_form
     - path
     - telephone
     - text
@@ -38,63 +39,70 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 10
     settings:
       rows: 9
-      summary_rows: 3
       placeholder: ''
+      summary_rows: 3
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
   field_average_annual_expenditure:
-    weight: 123
+    weight: 11
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_average_annual_profit_loss:
-    weight: 124
+    weight: 13
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_average_annual_revenue:
-    weight: 125
+    weight: 14
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_collaborate_with_diaspora:
-    weight: 126
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_concept_posters:
-    weight: 140
+    weight: 21
     settings:
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     region: content
   field_date_established:
-    weight: 127
-    settings: {  }
+    weight: 8
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
     third_party_settings: {  }
-    type: datetime_default
+    type: datetime_datelist
     region: content
   field_describe_the_need_support_:
-    weight: 128
+    weight: 16
     settings:
       rows: 5
       placeholder: ''
@@ -102,7 +110,7 @@ content:
     type: text_textarea
     region: content
   field_email_address:
-    weight: 129
+    weight: 19
     settings:
       size: 60
       placeholder: ''
@@ -110,7 +118,7 @@ content:
     type: email_default
     region: content
   field_export_potential_area:
-    weight: 130
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -118,94 +126,84 @@ content:
     type: string_textfield
     region: content
   field_highlight_requires_experti:
-    weight: 131
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    weight: 15
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_my_sme_have_export_potenti:
-    weight: 132
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_official_sme_address:
-    weight: 133
+    weight: 17
     settings:
       default_country: null
     third_party_settings: {  }
     type: address_default
     region: content
   field_phone_number:
-    weight: 134
+    weight: 18
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_type_of_sme_entity:
-    weight: 135
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_upload_sme_profile_or_powe:
-    weight: 136
-    settings:
-      match_operator: CONTAINS
-      size: 40
-      placeholder: ''
+    weight: 20
+    settings: {  }
     third_party_settings: {  }
-    type: dynamic_entity_reference_default
+    type: dynamic_entity_reference_options_select
     region: content
   field_what_is_the_development_st:
-    weight: 137
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_what_is_the_industry_of_yo:
-    weight: 138
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    weight: 7
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_what_is_your_level_of_inte:
-    weight: 139
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_willing_to_collaborate_wit:
-    weight: 122
-    settings:
-      display_label: true
+    weight: 4
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: options_buttons
     region: content
   groups:
     type: options_select
     settings: {  }
-    weight: 16
+    weight: 1
     region: content
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 22
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 27
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -213,26 +211,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 25
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 28
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 26
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -240,7 +238,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 23
     settings:
       match_operator: CONTAINS
       size: 60

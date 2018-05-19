@@ -319,6 +319,9 @@ display:
         - route
         - url
       tags:
+        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
+        - 'config:core.entity_view_display.profile.investor.default'
+        - 'config:core.entity_view_display.profile.professional.default'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
@@ -348,6 +351,9 @@ display:
         - route
         - url
       tags:
+        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
+        - 'config:core.entity_view_display.profile.investor.default'
+        - 'config:core.entity_view_display.profile.professional.default'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'

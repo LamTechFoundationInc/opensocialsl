@@ -6,7 +6,7 @@ dependencies:
     - mentions
 name: 'Advanced HTML'
 format: advanced_html
-weight: 0
+weight: -8
 filters:
   filter_mentions:
     id: filter_mentions

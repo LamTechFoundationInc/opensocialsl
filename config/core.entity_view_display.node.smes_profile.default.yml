@@ -28,6 +28,7 @@ dependencies:
     - address
     - datetime
     - options
+    - telephone
     - text
     - user
 id: node.smes_profile.default
@@ -36,54 +37,14 @@ bundle: smes_profile
 mode: default
 content:
   body:
-    label: hidden
+    label: above
     type: text_default
-    weight: 101
+    weight: 5
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_average_annual_expenditure:
-    weight: 103
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
-  field_average_annual_profit_loss:
-    weight: 104
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
-  field_average_annual_revenue:
-    weight: 105
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
-  field_collaborate_with_diaspora:
-    weight: 106
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
     region: content
   field_concept_posters:
-    weight: 120
+    weight: 15
     label: above
     settings:
       link: true
@@ -91,7 +52,7 @@ content:
     type: entity_reference_label
     region: content
   field_date_established:
-    weight: 107
+    weight: 3
     label: above
     settings:
       format_type: medium
@@ -100,21 +61,21 @@ content:
     type: datetime_default
     region: content
   field_describe_the_need_support_:
-    weight: 108
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_email_address:
-    weight: 109
+    weight: 11
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_export_potential_area:
-    weight: 110
+    weight: 4
     label: above
     settings:
       link_to_entity: false
@@ -122,7 +83,7 @@ content:
     type: string
     region: content
   field_highlight_requires_experti:
-    weight: 111
+    weight: 13
     label: above
     settings:
       link: true
@@ -130,7 +91,7 @@ content:
     type: entity_reference_label
     region: content
   field_my_sme_have_export_potenti:
-    weight: 112
+    weight: 14
     label: above
     settings:
       format: default
@@ -140,44 +101,36 @@ content:
     type: boolean
     region: content
   field_official_sme_address:
-    weight: 113
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   field_phone_number:
-    weight: 114
+    weight: 10
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_type_of_sme_entity:
-    weight: 115
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
-  field_upload_sme_profile_or_powe:
-    type: entity_reference_entity_view
-    weight: 116
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
   field_what_is_the_development_st:
-    weight: 117
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_what_is_the_industry_of_yo:
-    weight: 118
+    weight: 8
     label: above
     settings:
       link: true
@@ -185,14 +138,14 @@ content:
     type: entity_reference_label
     region: content
   field_what_is_your_level_of_inte:
-    weight: 119
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_willing_to_collaborate_wit:
-    weight: 102
+    weight: 12
     label: above
     settings:
       format: default
@@ -202,44 +155,53 @@ content:
     type: boolean
     region: content
   flag_follow_content:
-    weight: 10
+    weight: 19
     region: content
+    settings: {  }
+    third_party_settings: {  }
   groups:
     label: above
-    weight: -5
+    weight: 0
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   groups_type_closed_group:
-    label: above
-    weight: -5
+    label: hidden
+    weight: 16
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   groups_type_open_group:
-    label: above
-    weight: -5
+    label: hidden
+    weight: 17
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   groups_type_public_group:
-    label: above
-    weight: -5
+    label: hidden
+    weight: 18
     region: content
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   links:
-    weight: 100
+    weight: 20
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   addtoany: true
+  field_average_annual_expenditure: true
+  field_average_annual_profit_loss: true
+  field_average_annual_revenue: true
+  field_collaborate_with_diaspora: true
+  field_upload_sme_profile_or_powe: true
   langcode: true
   private_message_link: true

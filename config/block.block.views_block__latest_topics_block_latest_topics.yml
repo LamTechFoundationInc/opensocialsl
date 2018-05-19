@@ -1,0 +1,24 @@
+uuid: b0c4c400-9339-4fb7-a282-cc485040621a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_topics
+  module:
+    - views
+  theme:
+    - t4ddiaspora
+id: views_block__latest_topics_block_latest_topics
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_block:latest_topics-block_latest_topics'
+settings:
+  id: 'views_block:latest_topics-block_latest_topics'
+  label: 'Latest Topics'
+  provider: views
+  label_display: visible
+  views_label: 'Latest Topics'
+  items_per_page: none
+visibility: {  }

@@ -7,12 +7,16 @@ dependencies:
     - profile.type.profile
   module:
     - options
+    - profile
+third_party_settings:
+  profile:
+    profile_private: true
 id: profile.profile.field_gender
 field_name: field_gender
 entity_type: profile
 bundle: profile
 label: Gender
-description: ''
+description: 'This is required for statistical reasons but will be kept private. Other members will not see it'
 required: true
 translatable: false
 default_value: {  }
