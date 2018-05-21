@@ -1,11 +1,11 @@
 uuid: d1064b38-ab1d-4bd1-85bb-2175b88aa49b
 name: 'Open Diaspora Investment Platform'
-mail: info@lamtech.sl
+mail: tamba@tambalamin.me
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /welcome
+  front: /node/33
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
