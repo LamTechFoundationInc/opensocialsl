@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "config": {
         "platform": {
-            "php": "5.6"
+            "php": "7.1.13"
         }
     },
     "require": {
@@ -30,7 +30,8 @@
         "drupal/smtp": "^1.0",
         "drupal/ultimate_cron": "^2.0",
         "drupal/google_analytics": "^2.2",
-        "drupal/metatag": "^1.5"
+        "drupal/metatag": "^1.5",
+        "drupal/social_pwa": "1.x-dev"
     },
     "repositories": [
         {
