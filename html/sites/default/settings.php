@@ -5,8 +5,8 @@ $settings['hash_salt'] = 'drydCmlc95e6sKAqFBXXlTctmPC7iDW72N119-q0yhyDDpvbfa__99
 $settings['update_free_access'] = FALSE;
 
 $settings['file_public_path'] = 'sites/default/files';
-$settings['file_private_path'] = '../files-private';
-$config_directories['sync'] = '../config';
+$settings['file_private_path'] = '/var/www/vhosts/mrutimes.com/adiasporai.com/files-private';
+$config_directories['sync'] = '/var/www/vhosts/mrutimes.com/adiasporai.com/config';
 
 # $settings['omit_vary_cookie'] = TRUE;
 
@@ -47,6 +47,9 @@ $settings['trusted_host_patterns'] = array(
 '^.+\.pantheonsite\.io$',
 '^adiasporai\.com$',
 '^.+\.adiasporai\.com$',
+'^139\.162\.238\.175$',
+'^sldits\.com$',
+'^.+\.sldits\.com$',
   );
 
 $settings['file_scan_ignore_directories'] = [
@@ -57,9 +60,9 @@ $settings['file_scan_ignore_directories'] = [
 $settings['entity_update_batch_size'] = 50;
 
 $databases['default']['default'] = array (
-  'database' => 'opensocial',
-  'username' => 'root',
-  'password' => 'root',
+  'database' => 'adiasporaproddb',
+  'username' => 'adiasporaproddb',
+  'password' => 'Kn2Vl2!kJptj4ojg',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
@@ -68,6 +71,6 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'social';
 
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-}
+#if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+#  include $app_root . '/' . $site_path . '/settings.local.php';
+#}

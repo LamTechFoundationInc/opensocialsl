@@ -3,8 +3,13 @@ description: 'Provides User related configuration.'
 type: module
 core: 8.x
 dependencies:
-  - drupal:block
-  - field_group:field_group
-  - drupal:user
-  - drupal:views
+  - block
+  - 'drupal:block'
+  - 'drupal:user'
+  - 'drupal:views'
+  - field_group
+  - 'field_group:field_group'
+  - social_user
+  - user
+  - views
 package: Social

@@ -4,9 +4,13 @@ type: module
 core: 8.x
 package: Social
 dependencies:
-  - drupal:comment
-  - drupal:field
-  - field_group:field_group
-  - drupal:file
-  - social_comment:social_comment
-  - drupal:text
+  - comment
+  - 'drupal:comment'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:text'
+  - field
+  - 'field_group:field_group'
+  - file
+  - social_comment
+  - 'social_comment:social_comment'
