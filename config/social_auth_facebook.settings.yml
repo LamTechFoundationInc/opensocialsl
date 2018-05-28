@@ -1,3 +1,6 @@
 graph_version: '2.8'
 _core:
   default_config_hash: NrJGhXDjEi8AstqfCkQW5b8I9VKjtJKs9dYNzcDMbTQ
+app_id: '192091830801914'
+app_secret: fbd7ce3ea3c896a900a2798a484039b5
+status: 0

@@ -1,0 +1,29 @@
+uuid: cbafa4d5-e4e2-4011-8c94-28e9d018c642
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.getting-started-menu
+  module:
+    - system
+  theme:
+    - t4ddiaspora
+id: gettingstartedmenu
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:getting-started-menu'
+settings:
+  id: 'system_menu_block:getting-started-menu'
+  label: 'Getting Started Menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/getting-started/*\r\n/node/44\r\n/node/45\r\n/node/46\r\n/node/47\r\n/node/43\r\n/node/49\r\n/node/48"
+    negate: false
+    context_mapping: {  }

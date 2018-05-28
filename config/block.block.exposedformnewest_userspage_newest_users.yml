@@ -1,0 +1,29 @@
+uuid: c679f132-69ad-46bf-8587-b2d43fd6d9b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.newest_users
+  module:
+    - system
+    - views
+  theme:
+    - t4ddiaspora
+id: exposedformnewest_userspage_newest_users
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:newest_users-page_newest_users'
+settings:
+  id: 'views_exposed_filter_block:newest_users-page_newest_users'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'Filter Members'
+visibility:
+  request_path:
+    id: request_path
+    pages: /all-members
+    negate: false
+    context_mapping: {  }

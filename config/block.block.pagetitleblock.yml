@@ -10,7 +10,7 @@ dependencies:
 id: pagetitleblock
 theme: t4ddiaspora
 region: title
-weight: -21
+weight: -24
 provider: null
 plugin: social_page_title_block
 settings:

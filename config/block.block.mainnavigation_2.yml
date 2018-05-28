@@ -1,0 +1,24 @@
+uuid: 8b0bcc1d-2417-4efb-8ccb-869f2ba91dd2
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - t4ddiaspora
+id: mainnavigation_2
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Quick Navigation'
+  provider: system
+  label_display: visible
+  level: 2
+  depth: 0
+visibility: {  }

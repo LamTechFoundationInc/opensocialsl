@@ -3,36 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.profile.investor.field_account_investment_objecti
-    - field.field.profile.investor.field_annual_expenses
-    - field.field.profile.investor.field_annual_income
     - profile.type.investor
-  module:
-    - options
 id: profile.investor.default
 targetEntityType: profile
 bundle: investor
 mode: default
-content:
-  field_account_investment_objecti:
-    weight: 0
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_annual_expenses:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_annual_income:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
+content: {  }
 hidden: {  }

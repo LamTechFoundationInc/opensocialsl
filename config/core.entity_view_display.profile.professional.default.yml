@@ -3,18 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.profile.professional.field_resume_summary
     - profile.type.professional
 id: profile.professional.default
 targetEntityType: profile
 bundle: professional
 mode: default
-content:
-  field_resume_summary:
-    weight: 0
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
+content: {  }
 hidden: {  }

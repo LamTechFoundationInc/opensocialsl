@@ -1,11 +1,10 @@
-uuid: 2dbfeb98-82e2-4195-b03d-c6cbac91c6ba
+uuid: 1318a6af-78b3-48f0-81b7-aacea3aebb24
 langcode: en
 status: true
 dependencies:
   module:
     - social_auth
     - system
-    - user
   theme:
     - t4ddiaspora
 id: socialauthlogin
@@ -16,19 +15,12 @@ provider: null
 plugin: social_auth_login
 settings:
   id: social_auth_login
-  label: 'Social Auth Login'
+  label: 'Login With'
   provider: social_auth
-  label_display: visible
+  label_display: '0'
 visibility:
   request_path:
     id: request_path
     pages: "/user/login\r\n/user/register"
     negate: false
     context_mapping: {  }
-  user_role:
-    id: user_role
-    roles:
-      anonymous: anonymous
-    negate: false
-    context_mapping:
-      user: '@social_user.user_route_context:user'

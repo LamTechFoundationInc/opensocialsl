@@ -1,0 +1,29 @@
+uuid: a7316c97-e480-4a12-b463-f3ad25997936
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resources
+  module:
+    - system
+    - views
+  theme:
+    - t4ddiaspora
+id: exposedformresourcesinvestment_page_2
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:resources-investment_page_2'
+settings:
+  id: 'views_exposed_filter_block:resources-investment_page_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /explore/resources/investment-guides
+    negate: false
+    context_mapping: {  }

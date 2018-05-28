@@ -15,13 +15,13 @@ modules:
       sender: social_swiftmailer
   user:
     All:
-      formatter: php_mail
-      sender: SMTPMailSystem
+      formatter: social_swiftmailer
+      sender: social_swiftmailer
   private_message:
     All:
       formatter: social_swiftmailer
       sender: social_swiftmailer
   system:
     none:
-      formatter: SMTPMailSystem
-      sender: SMTPMailSystem
+      formatter: social_swiftmailer
+      sender: social_swiftmailer

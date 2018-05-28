@@ -7,5 +7,4 @@ label: Member
 weight: -7
 is_admin: null
 permissions:
-  - 'create entrepreneur_profile profile'
   - 'create new books'

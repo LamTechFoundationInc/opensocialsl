@@ -13,7 +13,7 @@ dependencies:
 id: areaskilledprofessional
 theme: t4ddiaspora
 region: hero
-weight: -17
+weight: -19
 provider: null
 plugin: 'block_content:6cbb5369-c0cf-47c6-b3e7-ede3e374f8c1'
 settings:

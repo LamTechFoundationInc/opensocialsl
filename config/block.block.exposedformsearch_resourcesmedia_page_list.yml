@@ -1,0 +1,29 @@
+uuid: a23ad6ec-9906-4d36-a12e-cdb1220b5c16
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_resources
+  module:
+    - system
+    - views
+  theme:
+    - t4ddiaspora
+id: exposedformsearch_resourcesmedia_page_list
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_resources-media_page_list'
+settings:
+  id: 'views_exposed_filter_block:search_resources-media_page_list'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'Filter by Category'
+visibility:
+  request_path:
+    id: request_path
+    pages: /explore/resources
+    negate: false
+    context_mapping: {  }

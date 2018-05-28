@@ -16,6 +16,7 @@ dependencies:
     - 'taxonomy_term:interests:ca88d733-b90c-4757-ba24-4a75d98ea040'
     - 'taxonomy_term:interests:d0e36cbd-cbd7-478e-9581-13e4cb739729'
   module:
+    - address
     - profile
     - taxonomy
     - user
@@ -39,7 +40,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'view any profile profile'
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -313,6 +314,9 @@ display:
         - user
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
+        - 'config:core.entity_view_display.profile.investor.default'
+        - 'config:core.entity_view_display.profile.professional.default'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
@@ -459,6 +463,9 @@ display:
         - 'languages:language_interface'
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
+        - 'config:core.entity_view_display.profile.investor.default'
+        - 'config:core.entity_view_display.profile.professional.default'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
@@ -513,6 +520,9 @@ display:
         - user
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
+        - 'config:core.entity_view_display.profile.investor.default'
+        - 'config:core.entity_view_display.profile.professional.default'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
@@ -705,6 +715,9 @@ display:
         - user
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
+        - 'config:core.entity_view_display.profile.investor.default'
+        - 'config:core.entity_view_display.profile.professional.default'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
@@ -901,6 +914,9 @@ display:
         - user
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
+        - 'config:core.entity_view_display.profile.investor.default'
+        - 'config:core.entity_view_display.profile.professional.default'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'
@@ -1037,17 +1053,158 @@ display:
             group_items: {  }
           entity_type: user
           plugin_id: numeric
+        field_place_of_origin_value:
+          id: field_place_of_origin_value
+          table: profile__field_place_of_origin
+          field: field_place_of_origin_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_place_of_origin_value_op
+            label: 'Country of Origin'
+            description: ''
+            use_operator: false
+            operator: field_place_of_origin_value_op
+            identifier: place_of_origin
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              diasporan: '0'
+              member: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: country_code
+        field_profile_address_country_code:
+          id: field_profile_address_country_code
+          table: profile__field_profile_address
+          field: field_profile_address_country_code
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_profile_address_country_code_op
+            label: 'Current of Residence'
+            description: ''
+            use_operator: false
+            operator: field_profile_address_country_code_op
+            identifier: resident_country
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              diasporan: '0'
+              member: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: country_code
+        field_profile_interests_target_id:
+          id: field_profile_interests_target_id
+          table: profile__field_profile_interests
+          field: field_profile_interests_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_profile_interests_target_id_op
+            label: Role
+            description: ''
+            use_operator: false
+            operator: field_profile_interests_target_id_op
+            identifier: interests
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              diasporan: '0'
+              member: '0'
+              contentmanager: '0'
+              sitemanager: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: interests
+          hierarchy: true
+          error_message: true
+          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups:
           1: AND
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - url.query_args
+        - user
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
+        - 'config:core.entity_view_display.profile.investor.default'
+        - 'config:core.entity_view_display.profile.professional.default'
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.compact_notification'

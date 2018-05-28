@@ -1,0 +1,8 @@
+uuid: 443a0ec5-b5af-48f2-accb-6230e39dfb52
+langcode: en
+status: true
+dependencies: {  }
+id: community-menu
+label: 'Community Menu'
+description: 'Community Menu'
+locked: false

@@ -13,7 +13,7 @@ dependencies:
 id: welcometoinvestmentportal
 theme: t4ddiaspora
 region: hero
-weight: -19
+weight: -21
 provider: null
 plugin: 'block_content:b4ce7494-0267-404f-b9d1-95f6b8a9bbdf'
 settings:

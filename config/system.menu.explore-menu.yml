@@ -1,0 +1,8 @@
+uuid: a1a341f1-880c-499e-b7ed-aa65d8e5efe4
+langcode: en
+status: true
+dependencies: {  }
+id: explore-menu
+label: 'Explore Menu'
+description: 'Explore Menu'
+locked: false

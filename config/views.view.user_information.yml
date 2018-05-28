@@ -3,9 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - profile.type.entrepreneur_profile
-    - profile.type.investor
-    - profile.type.professional
     - profile.type.profile
   module:
     - profile
@@ -122,8 +119,39 @@ display:
           id: type
           table: profile
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
             profile: profile
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: profile
           entity_field: type
           plugin_id: bundle
@@ -206,321 +234,6 @@ display:
           entity_field: uid
           plugin_id: numeric
       display_extenders: {  }
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - url
-        - user.permissions
-      tags:
-        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
-        - 'config:core.entity_view_display.profile.investor.default'
-        - 'config:core.entity_view_display.profile.professional.default'
-        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
-        - 'config:core.entity_view_display.profile.profile.compact'
-        - 'config:core.entity_view_display.profile.profile.compact_notification'
-        - 'config:core.entity_view_display.profile.profile.compact_teaser'
-        - 'config:core.entity_view_display.profile.profile.default'
-        - 'config:core.entity_view_display.profile.profile.featured'
-        - 'config:core.entity_view_display.profile.profile.hero'
-        - 'config:core.entity_view_display.profile.profile.search_index'
-        - 'config:core.entity_view_display.profile.profile.small'
-        - 'config:core.entity_view_display.profile.profile.small_teaser'
-        - 'config:core.entity_view_display.profile.profile.table'
-        - 'config:core.entity_view_display.profile.profile.teaser'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: 'Entrepreneur Page'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: user/%user/entrepreneur
-      menu:
-        type: none
-        title: Information
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: main
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          content:
-            value: 'There is no profile added yet, you can <a href="/user/{{ arguments.uid }}/entrepreneur_profile">add an entrepreneur profile here</a>'
-            format: basic_html
-          plugin_id: text
-      defaults:
-        empty: false
-        filters: false
-        filter_groups: false
-        title: false
-      filters:
-        type:
-          id: type
-          table: profile
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            entrepreneur_profile: entrepreneur_profile
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: profile
-          entity_field: type
-          plugin_id: bundle
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      title: Entrepreneur
-      display_description: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - url
-        - user.permissions
-      tags:
-        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
-        - 'config:core.entity_view_display.profile.investor.default'
-        - 'config:core.entity_view_display.profile.professional.default'
-        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
-        - 'config:core.entity_view_display.profile.profile.compact'
-        - 'config:core.entity_view_display.profile.profile.compact_notification'
-        - 'config:core.entity_view_display.profile.profile.compact_teaser'
-        - 'config:core.entity_view_display.profile.profile.default'
-        - 'config:core.entity_view_display.profile.profile.featured'
-        - 'config:core.entity_view_display.profile.profile.hero'
-        - 'config:core.entity_view_display.profile.profile.search_index'
-        - 'config:core.entity_view_display.profile.profile.small'
-        - 'config:core.entity_view_display.profile.profile.small_teaser'
-        - 'config:core.entity_view_display.profile.profile.table'
-        - 'config:core.entity_view_display.profile.profile.teaser'
-  page_2:
-    display_plugin: page
-    id: page_2
-    display_title: 'Investor Page'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: user/%user/investor
-      menu:
-        type: none
-        title: Information
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: main
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          content:
-            value: 'There is no profile added yet, you can <a href="/user/{{ arguments.uid }}/investor">add an investor profile here</a>'
-            format: basic_html
-          plugin_id: text
-      defaults:
-        empty: false
-        filters: false
-        filter_groups: false
-        title: false
-      filters:
-        type:
-          id: type
-          table: profile
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            investor: investor
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: profile
-          entity_field: type
-          plugin_id: bundle
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      title: Investor
-      display_description: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_interface'
-        - url
-        - user.permissions
-      tags:
-        - 'config:core.entity_view_display.profile.entrepreneur_profile.default'
-        - 'config:core.entity_view_display.profile.investor.default'
-        - 'config:core.entity_view_display.profile.professional.default'
-        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
-        - 'config:core.entity_view_display.profile.profile.compact'
-        - 'config:core.entity_view_display.profile.profile.compact_notification'
-        - 'config:core.entity_view_display.profile.profile.compact_teaser'
-        - 'config:core.entity_view_display.profile.profile.default'
-        - 'config:core.entity_view_display.profile.profile.featured'
-        - 'config:core.entity_view_display.profile.profile.hero'
-        - 'config:core.entity_view_display.profile.profile.search_index'
-        - 'config:core.entity_view_display.profile.profile.small'
-        - 'config:core.entity_view_display.profile.profile.small_teaser'
-        - 'config:core.entity_view_display.profile.profile.table'
-        - 'config:core.entity_view_display.profile.profile.teaser'
-  page_3:
-    display_plugin: page
-    id: page_3
-    display_title: 'Professional Page'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: user/%user/professional
-      menu:
-        type: none
-        title: Information
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: main
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: true
-          content:
-            value: 'There is no profile added yet, you can <a href="/user/{{ arguments.uid }}/professional">add an professional profile here</a>'
-            format: basic_html
-          plugin_id: text
-      defaults:
-        empty: false
-        filters: false
-        filter_groups: false
-        title: false
-      filters:
-        type:
-          id: type
-          table: profile
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            professional: professional
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: profile
-          entity_field: type
-          plugin_id: bundle
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-      title: Professionals
-      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:

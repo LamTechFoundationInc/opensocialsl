@@ -35,7 +35,6 @@ permissions:
   - 'change own username'
   - 'create book content'
   - 'create closed_group group'
-  - 'create entrepreneur_profile profile'
   - 'create event content'
   - 'create landing_page content'
   - 'create new books'

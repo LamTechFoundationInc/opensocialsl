@@ -1,0 +1,29 @@
+uuid: afb50aaa-cfea-4332-9e3c-0c173fdd0d09
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.resources
+  module:
+    - system
+    - views
+  theme:
+    - t4ddiaspora
+id: exposedformresourcespolicies_page_1
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:resources-policies_page_1'
+settings:
+  id: 'views_exposed_filter_block:resources-policies_page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /explore/resources/policies
+    negate: false
+    context_mapping: {  }

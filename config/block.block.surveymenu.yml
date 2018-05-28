@@ -1,0 +1,29 @@
+uuid: f55e4c07-3c81-45d8-b5c6-0d5cc1ae57c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.survey-menu
+  module:
+    - system
+  theme:
+    - t4ddiaspora
+id: surveymenu
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:survey-menu'
+settings:
+  id: 'system_menu_block:survey-menu'
+  label: 'Survey Menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "/connect\r\n/form/*\r\n/user\r\n/user/*\r\n/all-groups\r\n/all-events\r\n/all-members\r\n/all-topics"
+    negate: false
+    context_mapping: {  }

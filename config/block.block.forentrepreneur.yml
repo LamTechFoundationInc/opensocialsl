@@ -13,7 +13,7 @@ dependencies:
 id: forentrepreneur
 theme: t4ddiaspora
 region: hero
-weight: -14
+weight: -16
 provider: null
 plugin: 'block_content:c548b8c4-89de-4e4c-842f-afd7f06e4fba'
 settings:

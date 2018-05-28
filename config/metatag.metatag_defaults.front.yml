@@ -1,0 +1,13 @@
+uuid: eee23cf1-e0c1-44e7-8d0e-1d2515b2a150
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  title: 'African Diaspora Investment and Trade Platform | An outcome of a year-long World Bank study on the Sierra Leone diaspora’s perceptions about the challenges and opportunities to investing in Sierra Leone'
+  shortlink: '[site:url]'
+  description: 'This platform is best suited for entrepreneurs, investors, companies both in and out of Africa who are seeking information to act, ready to build partnerships for investments, and committed to contributing to the creation of an increasingly improved investment climate in Africa'

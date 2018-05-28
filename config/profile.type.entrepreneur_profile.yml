@@ -7,12 +7,12 @@ label: Entrepreneur
 registration: false
 multiple: false
 roles:
-  diasporan: diasporan
-  member: member
-  contentmanager: contentmanager
-  sitemanager: sitemanager
-  administrator: administrator
   authenticated: '0'
+  diasporan: '0'
+  member: '0'
+  contentmanager: '0'
+  sitemanager: '0'
+  administrator: '0'
 weight: 0
 use_revisions: false
 description: 'This is the default entrepreneur profile'

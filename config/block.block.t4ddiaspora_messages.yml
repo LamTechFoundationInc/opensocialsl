@@ -9,7 +9,7 @@ dependencies:
 id: t4ddiaspora_messages
 theme: t4ddiaspora
 region: hero
-weight: -20
+weight: -22
 provider: null
 plugin: system_messages_block
 settings:

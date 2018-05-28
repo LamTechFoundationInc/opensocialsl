@@ -1,0 +1,8 @@
+uuid: 7d047be3-fc39-42ca-b681-e5d873dcf8f5
+langcode: en
+status: true
+dependencies: {  }
+id: getting-started-menu
+label: 'Getting Started Menu'
+description: 'Getting Started Menu'
+locked: false

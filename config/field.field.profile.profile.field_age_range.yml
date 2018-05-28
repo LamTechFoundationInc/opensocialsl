@@ -17,7 +17,7 @@ entity_type: profile
 bundle: profile
 label: 'Age Range'
 description: 'This is required for statistical reasons but will be kept private. Other members will not see it'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

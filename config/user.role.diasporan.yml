@@ -7,5 +7,4 @@ label: Diasporan
 weight: -8
 is_admin: null
 permissions:
-  - 'create entrepreneur_profile profile'
   - 'create new books'

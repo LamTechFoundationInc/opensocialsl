@@ -1,0 +1,29 @@
+uuid: ec0e3ef6-343d-4f56-857b-9b1386a514da
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_topics
+  module:
+    - system
+    - views
+  theme:
+    - t4ddiaspora
+id: exposedformlatest_topicspage_latest_topics
+theme: t4ddiaspora
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:latest_topics-page_latest_topics'
+settings:
+  id: 'views_exposed_filter_block:latest_topics-page_latest_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'Filter topics'
+visibility:
+  request_path:
+    id: request_path
+    pages: /all-topics
+    negate: false
+    context_mapping: {  }

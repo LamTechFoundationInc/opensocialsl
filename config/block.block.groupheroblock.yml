@@ -9,7 +9,7 @@ dependencies:
 id: groupheroblock
 theme: t4ddiaspora
 region: hero
-weight: -21
+weight: -24
 provider: null
 plugin: group_hero_block
 settings:

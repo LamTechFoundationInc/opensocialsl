@@ -3,32 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.profile.entrepreneur_profile.field_ability_to_sell_and_promot
-    - field.field.profile.entrepreneur_profile.field_are_you_afraid_to_take_ris
     - profile.type.entrepreneur_profile
 id: profile.entrepreneur_profile.default
 targetEntityType: profile
 bundle: entrepreneur_profile
 mode: default
-content:
-  field_ability_to_sell_and_promot:
-    weight: 0
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_are_you_afraid_to_take_ris:
-    weight: 1
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
+content: {  }
 hidden: {  }
