@@ -116,11 +116,13 @@ module:
   social_page: 0
   social_post: 0
   social_post_photo: 0
+  social_private_message: 0
   social_profile: 0
   social_search: 0
   social_sharing: 0
   social_sso: 0
   social_swiftmail: 0
+  social_tagging: 0
   social_topic: 0
   social_user: 0
   swiftmailer: 0

@@ -1,0 +1,3 @@
+enable_content_tagging: 1
+allow_category_split: 1
+tag_node_type_landing_page: false
