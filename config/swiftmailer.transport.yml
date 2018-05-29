@@ -2,10 +2,13 @@ transport: sendmail
 smtp_host: gmail.com
 smtp_port: 465
 smtp_encryption: ssl
-smtp_username: tamba@tambalamin.me
-smtp_password: MotherSia@1967
 sendmail_path: /usr/sbin/sendmail
 sendmail_mode: bs
 spool_directory: ''
 _core:
   default_config_hash: 0SeYZshzgoabDrbz-junYqeQOQ9BypPv2gaFcnqKy0M
+smtp_credential_provider: swiftmailer
+smtp_credentials:
+  swiftmailer:
+    username: tamba@tambalamin.me
+    password: MotherSia@1967

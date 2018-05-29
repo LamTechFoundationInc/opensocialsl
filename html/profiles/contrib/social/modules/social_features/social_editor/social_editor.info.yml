@@ -3,10 +3,7 @@ description: 'Provides site editor components.'
 type: module
 core: 8.x
 dependencies:
-  - ckeditor
-  - 'drupal:ckeditor'
-  - 'drupal:editor'
-  - 'drupal:filter'
-  - editor
-  - filter
+  - drupal:ckeditor
+  - drupal:editor
+  - drupal:filter
 package: Social

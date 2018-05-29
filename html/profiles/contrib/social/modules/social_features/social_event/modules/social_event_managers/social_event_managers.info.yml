@@ -4,19 +4,11 @@ description: 'Social Event Organisers'
 core: 8.x
 package: Social
 dependencies:
-  - block
-  - 'drupal:block'
-  - 'drupal:field'
-  - 'drupal:node'
-  - 'drupal:profile'
-  - 'drupal:user'
-  - 'drupal:views'
-  - field
-  - node
-  - profile
-  - social_event
-  - 'social_event:social_event'
-  - social_profile
-  - 'social_profile:social_profile'
-  - user
-  - views
+  - drupal:block
+  - drupal:field
+  - drupal:node
+  - drupal:profile
+  - social_event:social_event
+  - social_profile:social_profile
+  - drupal:user
+  - drupal:views

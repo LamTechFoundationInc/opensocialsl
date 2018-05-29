@@ -3,12 +3,8 @@ description: 'Provides deafult comment type and related configuration'
 type: module
 core: 8.x
 dependencies:
-  - comment
-  - 'drupal:comment'
-  - 'drupal:field'
-  - 'drupal:system'
-  - 'drupal:text'
-  - field
-  - system
-  - text
+  - drupal:comment
+  - drupal:field
+  - drupal:system
+  - drupal:text
 package: Social

@@ -1,9 +1,7 @@
-name: 'Social Private Message'
+name: Social Private Message
 type: module
-description: 'Allow users to send private messages to each other'
+description: Allow users to send private messages to each other
 core: 8.x
-package: Social
+package: Social (experimental)
 dependencies:
-  - private_message
-  - 'private_message:private_message'
-  - text
+  - private_message:private_message

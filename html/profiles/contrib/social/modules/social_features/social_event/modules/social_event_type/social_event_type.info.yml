@@ -3,9 +3,5 @@ description: 'Provides and event types taxonomy for the event content type.'
 type: module
 core: 8.x
 dependencies:
-  - field
-  - node
-  - social_event
-  - 'social_event:social_event'
-  - taxonomy
+  - social_event:social_event
 package: Social

@@ -4,6 +4,7 @@ module:
   activity_logger: 0
   activity_send: 0
   activity_send_email: 0
+  activity_send_push: 0
   activity_viewer: 0
   address: 0
   addtoany: 0
@@ -26,6 +27,7 @@ module:
   config_update: 0
   contextual: 0
   crop: 0
+  csv_serialization: 0
   datetime: 0
   dblog: 0
   download_count: 0
@@ -85,6 +87,7 @@ module:
   rdf: 0
   search_api: 0
   search_api_db: 0
+  serialization: 0
   settings_tray: 0
   smtp: 0
   social_activity: 0
@@ -118,6 +121,7 @@ module:
   social_post_photo: 0
   social_private_message: 0
   social_profile: 0
+  social_pwa: 0
   social_search: 0
   social_sharing: 0
   social_sso: 0
@@ -125,6 +129,7 @@ module:
   social_tagging: 0
   social_topic: 0
   social_user: 0
+  social_user_export: 0
   swiftmailer: 0
   syslog: 0
   system: 0

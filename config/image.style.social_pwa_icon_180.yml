@@ -1,0 +1,16 @@
+uuid: 81633c3a-9fb4-4b79-a1ad-3a5c683389c0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nm8hspQNajnWyZXq8II3R0CpCDni11mnTJlnN5oILc4
+name: social_pwa_icon_180
+label: 'Social PWA Icon (180 x 180)'
+effects:
+  30f40753-b1c9-47a2-8e8a-589be28f5524:
+    uuid: 30f40753-b1c9-47a2-8e8a-589be28f5524
+    id: image_resize
+    weight: 1
+    data:
+      width: 180
+      height: 180

@@ -10,6 +10,7 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
+      push: push
     activity_create_direct: 1
     activity_bundle_entities:
       post-post: post-post

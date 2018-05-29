@@ -13,6 +13,7 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
+      push: push
     activity_create_direct: 0
     activity_aggregate: 0
     activity_entity_condition: comment_all

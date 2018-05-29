@@ -1,0 +1,16 @@
+uuid: 7770dfe3-483d-4d2f-b050-ea64ca4aadd1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xW6YptIgBHnh1mjuyKfqggnlAL5o8qq_tLuBoKWEspI
+name: social_pwa_icon_256
+label: 'Social PWA Icon (256 x 256)'
+effects:
+  c14b9a6d-6c0e-4389-9c9e-5be1d73c5bc5:
+    uuid: c14b9a6d-6c0e-4389-9c9e-5be1d73c5bc5
+    id: image_resize
+    weight: 1
+    data:
+      width: 256
+      height: 256
